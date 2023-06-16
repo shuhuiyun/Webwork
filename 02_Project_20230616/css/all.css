@@ -133,8 +133,11 @@ table {
   box-sizing: border-box;
 }
 /* restart css */
-
+body {
+  background-color: #b9b9b9;
+}
 .wrap {
+  max-width: 1024px;
   font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
   background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/02_Project_20230616/img/img-headerShape.png?raw=true;);
   background-repeat: no-repeat;
@@ -146,6 +149,7 @@ table {
 header {
   display: flex;
   justify-content: center;
+  margin-bottom: 76px;
 }
 .personal__photo {
   text-align: center;
@@ -175,17 +179,23 @@ header {
   vertical-align: middle;
   margin-right: 12px;
 }
+
 @media (max-width: 767px) {
+  .personal__text {
+    margin-left: 5%;
+  }
 }
 
 @media (max-width: 480px) {
   header {
     display: block;
     justify-content: center;
+    padding-top: 45px;
   }
   .personal__text {
     line-height: 36px;
-    margin: 8%;
+    width: 80%;
+    margin: 25px auto;
     padding: 3% 5%;
     border-radius: 15px;
     border: 3px #7f7bf2 solid;
@@ -193,7 +203,81 @@ header {
   }
   .personal__text a {
     color: #4a4a4a;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
+  }
+  .personal__text img {
+    position: relative;
+  }
+  .icon__purple-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #7f7bf2;
+  }
+}
+
+/*Skills*/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 70px;
+}
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #1736dc;
+  line-height: 36px;
+  margin: 56px 0px 36px 0px;
+}
+
+.skills__card {
+  box-shadow: 0px 0px 12px #00000013;
+
+  width: 27.609%;
+  margin: 0 0.8%;
+  border-radius: 5px;
+  text-align: center;
+  padding: 3%;
+  margin-bottom: 35px;
+}
+.skills__card p {
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 24px;
+  margin: 20px 0px;
+}
+.skills__card li {
+  font-size: 10px;
+  color: #4a4a4a;
+  text-align: start;
+  line-height: normal;
+}
+.skills__card li::before {
+  content: "•";
+  margin-right: 8%;
+  font-size: 10px;
+  color: #4a4a4a;
+}
+.skills div:nth-child(2) {
+  border-bottom: #f58d23 6px solid;
+}
+.skills div:nth-child(3) {
+  border-bottom: #539e43 6px solid;
+}
+
+.skills div:nth-child(4) {
+  border-bottom: #6762a6 6px solid;
+}
+@media (max-width: 860px) {
+  .skills__card {
+    width: 40%;
+  }
+}
+@media (max-width: 665px) {
+  .skills__card {
+    width: 90%;
   }
 }
