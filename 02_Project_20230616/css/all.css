@@ -281,3 +281,104 @@ h2 {
     width: 90%;
   }
 }
+
+/*Ecperience*/
+.experience__main {
+  margin-bottom: 55px;
+}
+
+.experience__main ul {
+  width: 100%;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 10%;
+}
+.experience__main ul::before {
+  content: "";
+  width: 1px;
+  background-color: #4a4a4a;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+
+  left: 50%;
+}
+.experience__main img {
+  display: block;
+
+  margin: 0 auto;
+}
+.experience__item {
+  width: 40%;
+  background-color: #fff;
+  border: 1px solid #fb56bf;
+  border-radius: 10px;
+  padding: 8px;
+}
+.experience__item p {
+  margin-bottom: 4px;
+}
+.experience li {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  position: relative;
+}
+.experience li::before {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/02_Project_20230616/img/dot-timeItem.png?raw=true);
+  content: "";
+  transform: translate(-50%, -0%);
+  width: 24px;
+  height: 28px;
+
+  position: absolute;
+
+  left: 50%;
+  top: 0px;
+}
+.left {
+  align-self: flex-start;
+}
+.line {
+  width: 48px;
+  height: 1px;
+  background-color: #4a4a4a;
+  margin: 0 auto;
+}
+@media (max-width: 690px) {
+  .left {
+    align-self: flex-end;
+  }
+  .line {
+    margin: 0;
+  }
+  .experience__main ul::before {
+    left: 24px;
+  }
+
+  .experience li::before {
+    left: 0;
+    transform: translate(50%, -0%);
+  }
+  .experience__main ul {
+    padding: 25px 0;
+  }
+  .experience__main {
+    padding: 0 15% 10% 15%;
+  }
+  .experience__main li {
+    margin-bottom: 15px;
+  }
+  .experience__item {
+    width: 80%;
+  }
+  .experience__main img {
+    display: block;
+    margin-left: 8px;
+  }
+}
