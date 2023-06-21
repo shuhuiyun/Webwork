@@ -216,14 +216,6 @@ header {
     background-color: #7f7bf2;
   }
 }
-
-/*Skills*/
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0 70px;
-}
 h2 {
   width: 100%;
   text-align: center;
@@ -231,60 +223,47 @@ h2 {
   color: #1736dc;
   line-height: 36px;
   margin: 56px 0px 36px 0px;
+  font-weight: bold;
+}
+.h2__pink {
+  color: #fb56bf;
 }
 
+/*Skills*/
+.skills__main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .skills__card {
-  box-shadow: 0px 0px 12px #00000013;
-
-  width: 27.609%;
-  margin: 0 0.8%;
-  border-radius: 5px;
-  text-align: center;
-  padding: 3%;
-  margin-bottom: 35px;
+  width: 284px;
+  box-shadow: 0px 0px 5px 2px #0000001e;
+  padding: 25px 3%;
+  border-radius: 10px;
+  margin: 8px;
 }
-.skills__card p {
+.skills__img {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+h3 {
   font-size: 18px;
-  color: #4a4a4a;
-  line-height: 24px;
-  margin: 20px 0px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .skills__card li {
   font-size: 10px;
-  color: #4a4a4a;
-  text-align: start;
-  line-height: normal;
+  line-height: 14px;
 }
 .skills__card li::before {
   content: "•";
-  margin-right: 8%;
-  font-size: 10px;
-  color: #4a4a4a;
+  margin-right: 15px;
 }
-.skills div:nth-child(2) {
-  border-bottom: #f58d23 6px solid;
-}
-.skills div:nth-child(3) {
-  border-bottom: #539e43 6px solid;
-}
-
-.skills div:nth-child(4) {
-  border-bottom: #6762a6 6px solid;
-}
-@media (max-width: 860px) {
-  .skills__card {
-    width: 40%;
-  }
-}
-@media (max-width: 665px) {
-  .skills__card {
-    width: 90%;
-  }
-}
-
 /*Ecperience*/
+
 .experience__main {
-  margin-bottom: 55px;
+  padding: 35px 0;
 }
 
 .experience__main ul {
@@ -293,7 +272,7 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 48px 10%;
+  padding: 48px 15%;
 }
 .experience__main ul::before {
   content: "";
@@ -350,6 +329,18 @@ h2 {
   background-color: #4a4a4a;
   margin: 0 auto;
 }
+.experience p {
+  font-size: 12px;
+  color: #9b9b9b;
+  margin-bottom: 10px;
+}
+.experience .text__bold {
+  font-weight: bold;
+  color: #4a4a4a;
+}
+.experience .text__red {
+  color: #8a1737;
+}
 @media (max-width: 690px) {
   .left {
     align-self: flex-end;
@@ -369,7 +360,7 @@ h2 {
     padding: 25px 0;
   }
   .experience__main {
-    padding: 0 15% 10% 15%;
+    padding: 0 15% 35px 15%;
   }
   .experience__main li {
     margin-bottom: 15px;
@@ -381,4 +372,46 @@ h2 {
     display: block;
     margin-left: 8px;
   }
+}
+
+/*work*/
+.work__main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.work__main li {
+  width: 284px;
+  box-shadow: 0px 0px 5px 2px #0000001e;
+  border-radius: 10px;
+  margin: 8px;
+}
+.work__main li:hover {
+  box-shadow: 0px 0px 5px 1px #00000073;
+}
+.work__text {
+  padding: 8px;
+}
+.work__main li div:nth-child(1) {
+  border-radius: 10px 10px 0px 0px;
+  min-height: 150px;
+  max-height: 66%;
+}
+.work__bg01 {
+  background-color: #fdb4e3;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/02_Project_20230616/img/logo-work-1.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.work__bg02 {
+  background-color: #424242;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/02_Project_20230616/img/logo-work-2.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.work__bg03 {
+  background-color: #8ad7fa;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/02_Project_20230616/img/logo-work-3.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
 }
