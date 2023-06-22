@@ -332,22 +332,22 @@ tr:hover {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-textarea {
-  width: 100%;
+
+input {
+  max-width: 460px;
 }
 
 .from__personal {
-  margin-left: 30px;
+  position: relative;
+  padding-bottom: 50px;
+  padding: 30px 0px 40px 30px;
   display: flex;
   flex-direction: column;
   color: #fff;
   font-weight: bold;
-}
-.from__personal {
-  width: 100%;
-  position: relative;
-  padding-bottom: 50px;
+  width: 460px;
 }
 .from__input {
   margin-bottom: 15px;
@@ -374,10 +374,10 @@ textarea {
   background-color: #40d5af;
 }
 textarea {
-  padding: 7px 11px;
   border-radius: 3px;
   font-size: 16px;
   border: none;
+  width: 460px;
 }
 footer {
   display: flex;
@@ -391,4 +391,9 @@ footer a {
 }
 footer a:hover {
   text-decoration: underline;
+}
+@media (max-width: 976px) {
+  .from__personal {
+    padding-left: 0px;
+  }
 }
