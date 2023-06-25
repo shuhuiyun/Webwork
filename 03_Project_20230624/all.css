@@ -132,10 +132,90 @@ table {
 *:after {
   box-sizing: border-box;
 }
+body {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
 /*layout*/
 .nav {
   display: flex;
   width: 100%;
   background-color: #4a4a4a81;
   justify-content: space-between;
+  padding: 0px 42px;
+  flex-wrap: wrap;
+}
+.logo {
+  margin: auto 0;
+}
+h1 {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/Hex-Logo.png?raw=true);
+  width: 170px;
+  height: 36px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav li a {
+  display: block;
+  padding: 30px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 16pt;
+  border-bottom: 7px solid #00cc9900;
+}
+.nav li a:hover {
+  color: #00cc99;
+  border-bottom: 7px solid #00cc99;
+}
+/*banner*/
+.banner {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/banner-01.png?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+/*footer*/
+footer {
+  background-color: #323228;
+  display: flex;
+  justify-content: space-between;
+  padding: 36px 42px;
+}
+.bottom__logo {
+  color: #9b9b9b;
+  text-align: end;
+}
+.bottom__logo p {
+  margin-top: 8px;
+}
+footer .link {
+  display: flex;
+  align-items: center;
+}
+footer .link a {
+  margin-left: 22px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.link .icon__FB {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/FB-icon.png?raw=true);
+}
+.link .icon__twitter {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/Twitter-icon.png?raw=true);
+}
+.link .icon__Instagram {
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/IG-icon.png?raw=true);
 }
