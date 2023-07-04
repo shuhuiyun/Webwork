@@ -714,9 +714,14 @@ form {
   border-radius: 5px 0px 0px 5px;
   font-size: 18px;
   border: 0px;
-  width: 70%;
+  width: 50%;
   height: 100%;
   outline: none;
+}
+@media (max-width: 414px) {
+  .search__bar {
+    width: 100%;
+  }
 }
 .search__btn {
   border-radius: 0px 5px 5px 0px;
