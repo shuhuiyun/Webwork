@@ -3,7 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/all.css" />
+    <title>六角學院 | 首頁</title>
+    <link
+      rel="shortcut icon"
+      href="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/tittle-logo.png?raw=true"
+    />
+    <meta name="keywords" content="六角學院,前端,線上課程" />
+    <meta
+      name="description"
+      content="「線上前端課程指南」是一個全面的網站，提供廣泛的線上前端課程資訊和學習資源。無論您是初學者還是有經驗的前端開發人員，這個網站都可以幫助您在前端領域取得進步。"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="banner banner__first">
+      <div class="nav">
+        <div class="logo">
+          <h1>Hex School</h1>
+        </div>
+        <ul>
+          <li>
+            <a class="hvr-underline-reveal" href="index.html">首頁</a>
+          </li>
+          <li><a class="hvr-underline-reveal" href="course.html">課程</a></li>
+          <li><a class="hvr-underline-reveal" href="question.html">問答</a></li>
+        </ul>
+      </div>
+      <h2>
+        歡迎來到
+        <span class="text__white"> 六角學院 </span>
+        <br />
+        帶你一起攻略前端設計
+      </h2>
+      <a class="button hvr-icon-wobble-horizontal" href="">
+        馬上去註冊　
+        <img
+          class="hvr-icon"
+          src="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/white-arrow.png?raw=true"
+          class="arrow-icon"
+        />
+      </a>
+    </div>
+    <div class="main">   
+      <div class="card">
+        <h3>
+          精選課程
+          <span>幫助你拿到前端工程師的門票</span>
+        </h3>
+        <ul>        
+         <li>
+           <img src="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/HTML5-icon.png?raw=true" alt="">
+             <p class="text__bold">Html 5 基礎教學</p>
+             <p>主流前端網站設計的基礎，透過實際的範例，瞭解正確的網站開發流程。</p>
+           </img>
+         </li>
+         <li>
+           <img src="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/RWD-icon.png?raw=true" alt="">
+             <p class="text__bold">響應式網站設計</p>
+             <p>六角學院提供業界響應式開發方法，讓學生瞭解完善的行動版開發觀念。</p>
+           </img>
+         </li>
+         <li>
+           <img src="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/jQuery-icon.png?raw=true" alt="">
+             <p class="text__bold">jQuery 實戰教學</p>
+             <p>分為四大主題：變數的使用、操作DOM、基本數學運算和套件運用。</p>
+           </img>
+         </li>
+        </ul>
+      </div>
+      <div class="comparative">
+        <h3>課程比較
+          <span>線上課程與實體課程的差異</span>
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th>項目
+              </th>
+              <th>六角學院 線上課程</th>
+              <th>一般線上課程</th>
+              <th>一般實體課程</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>費用</td>
+              <td class="tabletext__focus">較低</td>
+              <td class="tabletext__focus">較低</td>
+              <td>較高</td>
+            </tr>
+            <tr>
+              <td>學習效果</td>
+              <td>一般</td>
+              <td>較低</td>
+              <td class="tabletext__focus">很好</td>
+            </tr>
+            <tr>
+              <td>Code review</td>
+              <td class="tabletext__focus">有</td>
+              <td>無</td>
+              <td>不一定</td>
+            </tr>
+            <tr>
+              <td>課程更新速度</td>
+              <td class="tabletext__focus">普通</td>
+              <td class="tabletext__focus">普通</td>
+              <td>較慢</td>
+            </tr>
+            <tr>
+              <td>多次複習</td>
+              <td class="tabletext__focus">可</td>
+              <td class="tabletext__focus">可</td>
+              <td>不可</td>
+            </tr>
+            <tr>
+              <td>字幕</td>
+              <td class="tabletext__focus">有</td>
+              <td>不一定</td>
+              <td>板書</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+    <div class="register">
+      <div>
+        <p>
+          你就是六角的下一個學生！
+        
+        </p>
+        <p>快留下資料讓我們認識你吧</p>
+      </div>
+      
+        <form action=""> 
+          <input type="text" placeholder="你的名字是？">
+          <input type="email" placeholder="example@mail.com.tw" name="mail" id="mail">
+      <input class="button__main" type="submit" value="送 出">
+        </form>
+     
+    </div>
+    <footer>
+      <div class="bottom__logo">
+        <img
+          src="https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/Hex-Logo.png?raw=true"
+          alt="Hex-School"
+        />
+        <p>© 2018 hexschool</p>
+      </div>
+      <div class="link">
+        <a class="icon__FB" href=""></a><a class="icon__twitter" href=""></a
+        ><a href="" class="icon__Instagram"></a>
+      </div>
+    </footer>
+  </body>
 </html>
