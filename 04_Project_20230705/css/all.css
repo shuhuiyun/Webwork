@@ -1,0 +1,49 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.img__main {
+  margin: 10% auto;
+  margin-bottom: 15px;
+  padding: 50px;
+  width: 500px;
+  height: 400px;
+  background-color: rgb(175, 179, 172);
+  border-radius: 15px;
+  position: relative;
+}
+.img__body {
+  width: 500px;
+  height: 400px;
+}
+.img__head {
+  width: 258px;
+  height: 193px;
+  position: absolute;
+  right: 48px;
+  top: 0px;
+  z-index: 2;
+}
+
+p {
+  background-color: red;
+  padding: 10px;
+  writing-mode: vertical-rl;
+  top: 180px;
+  width: 55px;
+  position: absolute;
+  height: 220px;
+  right: 84px;
+  font-family: "標楷體";
+  font-size: 52px;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.438);
+  font-weight: bold;
+  color: rgb(54, 30, 10);
+  overflow: hidden;
+  display: none;
+}
+button {
+  margin: auto;
+  font-size: 24px;
+  padding: 1%;
+}
