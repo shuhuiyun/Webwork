@@ -507,7 +507,7 @@ footer a:hover {
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease-out;
-  background-image: url(/img/top-button.png);
+  background-image: url(./img/top-button.png);
   background-size: contain;
 }
 
