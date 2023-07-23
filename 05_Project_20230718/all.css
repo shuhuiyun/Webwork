@@ -1,0 +1,516 @@
+/* Reset CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* Reset CSS*/
+* {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+/* topnav */
+.wrap {
+  width: 100%;
+}
+.topnav {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: end;
+  padding: 6px 13px;
+}
+.topnav img {
+  vertical-align: bottom; /* img底下的空白 */
+  padding-right: 3px;
+}
+.topnav li {
+  margin-left: 8px;
+}
+.topnav a {
+  text-decoration: none;
+}
+.topnav a:hover {
+  text-decoration: underline;
+}
+.FBword a {
+  color: #4460a0;
+}
+.Twitterword a {
+  color: #00aaec;
+}
+.FBword {
+  padding-right: 8px;
+  border-right: 1px solid #cccccd;
+}
+/* menu */
+.menu ul > li > ul {
+  float: right;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  padding: 15px 0px;
+  border-radius: 5px;
+  display: none;
+  box-shadow: 0px 0px 7px 1px #00000054;
+}
+
+.menu ul > li > ul > li > a {
+  font-size: 16px;
+  color: #686868;
+  padding: 25px 20px;
+
+  text-decoration: none;
+}
+.show-menu {
+  display: block;
+}
+.menu ul > li > ul > li {
+  margin: 8px 0px;
+  padding: 5px 0px;
+  transition: all 0.3s;
+}
+.menu ul > li > ul > li:hover {
+  background-color: #ebebeb;
+}
+
+.menu {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-shadow: 0px 4px 4px #0000002f;
+  position: sticky;
+  background-color: #ffffff;
+  top: 0;
+}
+h1 {
+  margin: auto 0px;
+}
+h1 a {
+  display: block;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/01_Project_20230615/img/HexSchool-logo.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 54px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu ul {
+  display: flex;
+}
+.menu ul > li {
+  margin: 0 20px;
+}
+.line__hover {
+  display: block;
+  font-size: 18px;
+  padding: 18px 10px 14px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #00cc99;
+  border-bottom: 4px solid #00cc9900;
+}
+.line__hover:hover {
+  border-bottom: 4px solid #00cc99;
+}
+/* banner */
+.banner {
+  margin: 0 auto;
+  padding: 110px 0px;
+  background-size: cover;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/01_Project_20230615/img/banner01.png?raw=true);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.banner2 {
+  margin: 0 auto;
+  padding: 110px 0px;
+  background-size: cover;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/banner-02.png?raw=true);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.banner3 {
+  margin: 0 auto;
+  padding: 110px 0px;
+  background-size: cover;
+  background-image: url(https://github.com/shuhuiyun/Webwork/blob/main/03_Project_20230624/images/banner-01.png?raw=true);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.banner__text {
+  background-color: #00000025;
+  padding: 50px;
+  color: #ffffff;
+  font-size: 3rem;
+  line-height: normal;
+}
+@media (max-width: 718px) {
+  .banner__text {
+    font-size: 2rem;
+  }
+}
+/*card*/
+.card {
+  margin: 66px 0px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__item {
+  width: 300px;
+  padding: 26px;
+  margin: 15px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px #0000002f;
+  color: #333333;
+  line-height: normal;
+}
+.card__img {
+  height: 170px;
+  position: relative;
+}
+.card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card__item h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.card__item ol {
+  list-style-type: none;
+  padding-left: 0.4rem;
+}
+.card__item li:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: #333333;
+  border-radius: 50%;
+  margin-right: 5px;
+  line-height: normal;
+  vertical-align: middle;
+}
+/*table*/
+.table {
+  font-weight: 600;
+  margin-bottom: 80px;
+  color: #333333;
+}
+table {
+  margin: 0 auto;
+}
+h3 {
+  text-align: center;
+  color: #333333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+tr,
+td,
+th {
+  padding: 9px 65px 9px 23px;
+  text-align: left;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+th {
+  background-color: #f7f7f7;
+}
+tr:hover {
+  background-color: #00cc9915;
+}
+
+.table__text--point {
+  color: #00a67d;
+}
+/*from*/
+.from {
+  background: linear-gradient(#00644a, #009772);
+  padding: 30px 20px;
+}
+.from h4 {
+  text-align: center;
+  color: #fff;
+  line-height: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.from__main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  max-width: 460px;
+}
+
+.from__personal {
+  position: relative;
+  padding-bottom: 50px;
+  padding: 30px 0px 40px 30px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: bold;
+  width: 460px;
+}
+.from__input {
+  margin-bottom: 15px;
+  font-size: 16px;
+  padding: 7px 11px;
+  border-radius: 3px;
+  margin: 3px 0px 18px 0px;
+  border: none;
+}
+.from__button {
+  padding: 8px 22px;
+  border-radius: 3px;
+  width: 70px;
+  background-color: #00cc99;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.from__button:hover {
+  background-color: #40d5af;
+}
+textarea {
+  border-radius: 3px;
+  font-size: 16px;
+  border: none;
+  width: 460px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 12px 53px 12px;
+  line-height: normal;
+}
+footer a {
+  color: #e12d80;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 976px) {
+  .from__personal {
+    padding-left: 0px;
+  }
+}
+.swiper {
+  max-width: 1200px;
+  height: 450px;
+}
+@media (max-width: 718px) {
+  .swiper {
+    max-width: 1200px;
+  }
+}
+.swiper-button-prev {
+  background-image: url(./img/caret-left-solid.svg) !important;
+  background-repeat: no-repeat;
+  filter: invert(51%) sepia(99%) saturate(409%) hue-rotate(115deg)
+    brightness(98%) contrast(101%);
+  top: var(--swiper-navigation-top-offset, 50%);
+}
+
+.swiper-button-next {
+  background-image: url(./img/caret-right-solid.svg) !important;
+  background-repeat: no-repeat;
+  filter: invert(51%) sepia(99%) saturate(409%) hue-rotate(115deg)
+    brightness(98%) contrast(101%);
+  top: var(--swiper-navigation-top-offset, 50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+.photo__box {
+  margin-bottom: 80px;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: wrap;
+}
+.photo a {
+  margin: 2%;
+}
+.photo img {
+  width: 12rem;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 5px;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  background-image: url(/img/top-button.png);
+  background-size: contain;
+}
+
+.back-to-top:hover {
+  opacity: 0.7;
+}
