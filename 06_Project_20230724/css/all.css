@@ -177,7 +177,7 @@ table {
   flex-wrap: wrap;
 }
 .logo {
-  background-image: url(./img/HexSchool-logo.png);
+  background-image: url(/img/HexSchool-logo.png);
   width: 170px;
   height: 36px;
   background-repeat: no-repeat;
