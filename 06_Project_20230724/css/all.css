@@ -1,0 +1,274 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*start*/
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*toplink*/
+.top__link {
+  width: 100%;
+  background-color: #f6f6f6;
+  text-align: end;
+  padding: 6px 21px;
+}
+.top__link a {
+  text-decoration: none;
+}
+.top__link a:hover {
+  text-decoration: underline;
+}
+.top__link img {
+  vertical-align: -14%;
+  margin-right: 3px;
+}
+.fb-word {
+  color: #4460a0;
+}
+.twitter-word {
+  color: #00aaec;
+}
+
+/*menu*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 9px;
+  box-shadow: 0px 4px 5px 0px #0000003a;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo {
+  background-image: url(/img/HexSchool-logo.png);
+  width: 170px;
+  height: 36px;
+  background-repeat: no-repeat;
+  text-indent: 101%; /*首行縮排到超過100%*/
+  overflow: hidden; /*超過div的範圍就隱藏*/
+  white-space: nowrap; /*不斷行*/
+  margin: 9px 0px;
+}
+.menu ul a {
+  padding: 15px 12px;
+  margin-left: 14px;
+  text-decoration: none;
+  color: #00cc99;
+  border-bottom: #00cc9900 solid 4px;
+  transition: all 0.3s ease-in-out;
+}
+.menu ul a:hover {
+  border-bottom: #00cc99 solid 4px;
+}
+@media (max-width: 767px) {
+  .menu ul {
+    display: flex;
+    max-width: 180px;
+    justify-content: end;
+  }
+  .menu ul a {
+    padding: 15px 0px;
+    margin-left: 0px;
+    min-width: 88px;
+    display: block;
+    text-align: center;
+    border-bottom: #00cc9900 solid 4px;
+  }
+}
+@media (max-width: 414px) {
+  .logo {
+    width: 100%;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .menu ul {
+    display: block;
+
+    width: 100%;
+  }
+  .menu ul a {
+    padding: 15px 0px;
+  }
+}
+/*card*/
+.card {
+  justify-content: center;
+  display: flex;
+  margin: 35px auto;
+  flex-wrap: wrap;
+}
+.card > li {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 1%;
+  text-align: center;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #00000027;
+}
+
+.card__pic {
+  position: relative;
+  min-height: 170px;
+}
+
+.card__pic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.card__text {
+  text-align: start;
+  line-height: normal;
+}
+h2 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.card__text li::before {
+  content: "．";
+}
