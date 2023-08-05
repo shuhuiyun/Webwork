@@ -1,0 +1,111 @@
+@use "../utils/variable" as *;
+@use "../extensions/" as *;
+@mixin menu__underline {
+  list-style: none;
+  display: flex;
+  transition: all 1s;
+  a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+    position: relative;
+    display: block;
+    padding: $menu__padding;
+    letter-spacing: 2px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: $menu__text-color;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $menu__text-color;
+      text-decoration: none;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      height: $menu__bloder_size;
+      width: 100%;
+      background-color: $color__accent;
+      transform-origin: right top;
+      transform: scale(0, 1);
+      transition: color 0.1s, transform 0.2s ease-out;
+    }
+    &:active::before {
+      background-color: #000;
+    }
+    &:hover::before,
+    &:focus::before {
+      transform-origin: left top;
+      transform: scale(1, 1);
+    }
+  }
+}
+
+/*hamburger menu*/
+@mixin hamburger {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  width: $hamburger-w-h;
+  height: $hamburger-w-h;
+  span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: $hamburger-span-w;
+    height: $hamburger-span-h;
+    background: $hamburger-bgcolor;
+    &:nth-child(1) {
+      top: calc($hamburger-w-h / 2) - $hamburger-span-spacing; //29
+
+      left: $hamburger-span-center;
+    }
+    &:nth-child(2) {
+      top: calc($hamburger-w-h / 2); //36
+      left: $hamburger-span-center;
+    }
+    &:nth-child(3) {
+      top: calc($hamburger-w-h / 2) + $hamburger-span-spacing;
+      left: $hamburger-span-center;
+    }
+  }
+  &::after {
+    z-index: 999;
+    content: "MENU";
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: $hamburger-hide-text;
+    scale: 0.8;
+  }
+  &.active::after {
+    color: $hamburger-hide-text;
+  }
+}
+@mixin hamburger-active {
+  span:nth-child(1) {
+    -ms-transform: translateY(0px) rotate(-315deg);
+    -webkit-transform: translateY(0px) rotate(-315deg);
+    transform: translateY($hamburger-span-spacing) rotate(-315deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    -ms-transform: translateY(-0px) rotate(315deg);
+    -webkit-transform: translateY(-0px) rotate(315deg);
+    transform: translateY(0 - $hamburger-span-spacing) rotate(315deg);
+  }
+  span {
+    background-color: #fff;
+  }
+}

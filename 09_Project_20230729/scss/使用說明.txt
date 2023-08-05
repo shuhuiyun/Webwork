@@ -1,0 +1,8 @@
+-base(基礎)
+-components (元件)
+-layout (版型)
+-pages (頁面)
+-themes (主題)
+-utils (工具)
+-vendors (外部)
+-vendors-extensions(覆蓋外部)

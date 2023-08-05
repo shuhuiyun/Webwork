@@ -1,0 +1,100 @@
+@use "../utils" as *;
+@use "../vendors" as *;
+@use "../extensions/" as *;
+@use "../layout/grid" as *;
+.register {
+  padding: 50px;
+  text-align: center;
+  background-color: $color__bg;
+  .register__subtitle {
+    font-size: $text_xxl;
+    color: $color__primary;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+  .register__content {
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    border-top: 4px solid $color__accent;
+    margin: 0 auto;
+    max-width: 620px;
+    padding: 15px;
+    h4 {
+      font-size: $text_l;
+      font-weight: 1000;
+      margin-bottom: 16px;
+      color: $color__primary;
+    }
+    .register__text {
+      color: $color__primary;
+      display: flex;
+      flex-direction: row;
+      p {
+        text-align: start;
+        line-height: normal;
+        width: 50%;
+        margin-right: 20px;
+      }
+      form {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: $color__primary;
+        width: 50%;
+        .email__address {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 15px;
+          width: 100%;
+        }
+        .password {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          .password__input {
+            margin-bottom: 12px;
+          }
+          a {
+            text-decoration: none;
+            color: $color__accent;
+            font-size: $text_s;
+            margin-bottom: 36px;
+            line-height: normal;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        button {
+          align-self: flex-end;
+          background: $color__accent;
+          font-size: $text_s;
+          padding: 6px 48px;
+          border-radius: 3px;
+        }
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 1%;
+        p {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        form {
+          width: 100%;
+          .email__address {
+            max-width: 285px;
+          }
+          .password {
+            max-width: 285px;
+          }
+        }
+      }
+    }
+  }
+  @include mobile480 {
+    padding: 50px 3%;
+  }
+}

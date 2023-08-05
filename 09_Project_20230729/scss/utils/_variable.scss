@@ -1,0 +1,19 @@
+$color__primary: #3d1101;
+$color__secondary: #fafafa;
+$color__accent: #f56c23;
+$color__bg: #efe9e7;
+
+/*header*/
+$header_padding: 42px;
+$header_bgcolor: rgb(0, 0, 0, 0.7);
+$logo_img: url(/img/logo_w@svg.svg);
+$logo_w: 120px;
+$logo_h: 54px;
+
+/*text*/
+$text_normal: 16px;
+$text_xxl: $text_normal + 6px;
+$text_xl: $text_normal + 4px;
+$text_l: $text_normal + 2px;
+$text_m: $text_normal;
+$text_s: $text_normal - 2px;

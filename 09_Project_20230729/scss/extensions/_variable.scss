@@ -1,0 +1,12 @@
+$menu__text-color: rgb(255, 255, 255);
+$menu__bloder_size: 5px;
+$menu__padding: 18px 15px;
+
+/*hamburger*/
+$hamburger-w-h: 52px;
+$hamburger-bgcolor: #fff;
+$hamburger-hide-text: #ffffff00;
+$hamburger-span-w: 22px; //橫線的長度
+$hamburger-span-h: 3px; //橫線的高度
+$hamburger-span-spacing: 7px;
+$hamburger-span-center: #{clac($hamburger-w-h - $hamburger-span-w) / 2};

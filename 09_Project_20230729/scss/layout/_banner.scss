@@ -1,0 +1,46 @@
+@use "../utils" as *;
+@use "../layout/grid" as *;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0200;
+  background-image: url(/img/header_desktop.png);
+  background-position: center;
+  max-width: 100%;
+  min-height: 420px;
+  //   background-size: cover;
+  background-repeat: no-repeat;
+  .banner__text {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.35);
+    max-width: 460px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 22px;
+    p {
+      font-size: $text_m;
+      line-height: normal;
+      &:first-child {
+        font-size: 36px;
+        margin-bottom: 12px;
+      }
+      br {
+        display: none;
+      }
+      @include mobile480 {
+        br {
+          display: block;
+        }
+      }
+      @include iphone6 {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  }
+  @include mobile480 {
+    background-image: url(/img/header_mobile.png);
+  }
+}

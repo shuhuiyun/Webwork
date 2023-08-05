@@ -1,0 +1,291 @@
+@use "../utils" as *;
+@use "../vendors" as *;
+@use "../extensions/" as *;
+@use "../layout/grid" as *;
+.wrap__product {
+  padding: 50px 44px;
+  background-color: $color__bg;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  .subnav {
+    width: 30%;
+    h3 {
+      white-space: nowrap;
+      font-size: $text_xl;
+      color: $color__primary;
+      margin-bottom: 16px;
+      i {
+        font-size: 26px;
+        margin-right: 1%;
+      }
+    }
+    ul {
+      li {
+        border-bottom: 1px solid $color__primary;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: $text_m;
+          color: $color__primary;
+          padding: 8px;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: $color__primary;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    width: 60%;
+    margin-left: 20px;
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        .searchTerm {
+          width: 100%;
+          border: 2px solid $color__primary;
+          border-right: none;
+          padding: 5px;
+          height: 32px;
+          outline: none;
+          background-color: $color__bg;
+        }
+        .searchButton {
+          width: 32px;
+          height: 32px;
+          border: 1px solid $color__primary;
+          background-color: $color__primary;
+          text-align: center;
+          color: #fff;
+          cursor: pointer;
+          font-size: 19px;
+        }
+      }
+
+      .checkout {
+        text-decoration: none;
+        margin-left: 5%;
+        display: flex;
+        align-items: center;
+        min-width: 110px;
+        white-space: nowrap;
+        &::before {
+          content: "結帳去　|";
+          margin-right: 13px;
+          color: $color__primary;
+          font-size: $text_m;
+        }
+        i {
+          font-size: 29px;
+          position: relative;
+          .number {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            color: #fff;
+            background-color: $color__accent;
+            display: flex;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border: #fff 0.3px solid;
+            p {
+              font-size: 8px;
+              scale: 0.6;
+            }
+          }
+        }
+      }
+    }
+    .product__card {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: space-between;
+        li {
+          position: relative;
+          width: 32%;
+          box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin-bottom: 30px;
+          a {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 44px;
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            i {
+              font-size: 20px;
+            }
+          }
+          img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+          }
+          .text__content {
+            padding: 10px;
+            span {
+              text-align: center;
+              display: inline-block;
+              border-bottom: 1px solid $color__primary;
+              width: 50%;
+              vertical-align: middle;
+              background-color: $color__primary;
+              margin-top: 8px;
+            }
+            p {
+              color: $color__primary;
+              line-height: normal;
+            }
+            .text__title {
+              font-size: 20px;
+              margin-top: 11px;
+            }
+            .text__subtitle {
+              font-size: 12px;
+            }
+            .text__price {
+              margin-top: 20px;
+              margin-bottom: 13px;
+              font-weight: bold;
+            }
+            button {
+              background-color: $color__bg;
+              font-size: 16px;
+              width: 100%;
+              color: $color__accent;
+              border: 2px solid $color__accent;
+              border-radius: 3px;
+              transition: all 0.1s ease-in-out;
+              i {
+                margin-right: 8px;
+                color: $color__accent;
+                transition: all 0.1s ease-in-out;
+              }
+              &:hover {
+                background-color: $color__accent;
+                color: #fff;
+                i {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .ribbon-wrap {
+            width: 106px;
+            height: 108px;
+            overflow: hidden;
+            /* 當超過width和height的大小就隱藏 */
+            position: absolute;
+            top: -5px;
+            right: -6px;
+            .ribbon {
+              position: relative;
+              left: -11px;
+              top: 26px;
+              width: 148px;
+              background-color: #00cc99;
+              color: #fff;
+              padding: 5px 0;
+              text-align: center;
+              transform: rotate(45deg);
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              &:before {
+                content: "";
+                border-top: 4px solid #078f6d;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                position: absolute;
+                top: 26px;
+                left: 5px;
+              }
+              &:after {
+                content: "";
+                border-top: 4px solid #078f6d;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                position: absolute;
+                bottom: -4px;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 1000px) {
+      .product__card {
+        ul {
+          li {
+            width: 48%;
+          }
+        }
+      }
+    }
+    @media (max-width: 700px) {
+      .product__card {
+        ul {
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  .wrap__product {
+    display: block;
+    .subnav {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .content {
+      .navbar {
+        flex-direction: column;
+        .checkout {
+          margin-top: 10px;
+          align-self: flex-end;
+        }
+      }
+      width: 100%;
+      margin: 0;
+      ul {
+        li {
+          a {
+            height: 44px;
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

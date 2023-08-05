@@ -1,0 +1,6 @@
+@mixin text--hide {
+  //Logo中加入a>h1，並隱藏文字
+  text-indent: 101%; //首行縮排到超過100%
+  overflow: hidden; //超過div的範圍就隱藏
+  white-space: nowrap; //不斷行
+}

@@ -1,0 +1,298 @@
+@use "../utils" as *;
+@use "../vendors" as *;
+@use "../extensions/" as *;
+@use "../layout/grid" as *;
+
+.wrap {
+  background-color: $color__bg;
+  padding: 50px 0px;
+  /*feature start*/
+  .feature__title {
+    h2 {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: $color__primary;
+      font-size: $text_xl;
+      line-height: normal;
+      text-align: center;
+      &::after {
+        margin-left: 1%;
+        content: "";
+        height: 0.5px;
+        width: 8%;
+        background-color: #474747;
+      }
+      &::before {
+        margin-right: 5px;
+
+        left: 0px;
+        content: "";
+        height: 0.5px;
+        width: 8%;
+        background-color: #474747;
+      }
+    }
+    ul {
+      margin-top: 31px;
+      display: flex;
+      justify-content: center;
+      li {
+        max-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 30px;
+        width: 30%;
+        img {
+          margin-bottom: 20px;
+        }
+        h3 {
+          text-align: center;
+          font-size: $text_l;
+          color: $color__primary;
+          margin-bottom: 11px;
+        }
+        p {
+          font-size: $text_m;
+          line-height: normal;
+          color: $color__primary;
+        }
+      }
+    }
+  }
+  @media (max-width: 735px) {
+    .feature__title {
+      ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+          margin: 0;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0 30px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  /*chef start*/
+  .chef {
+    margin-top: 50px;
+    background-color: $color__primary;
+    color: $color__bg;
+    padding: 0px 0px 0px 5%;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    .chef__img {
+      display: block;
+      background-image: url(/img/main_chef_brown.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50%;
+    }
+
+    .chef__text {
+      max-width: 410px;
+      padding: 80px 25px;
+      .chef__title {
+        font-size: $text_xl;
+        br {
+          display: none;
+        }
+      }
+      p {
+        line-height: normal;
+      }
+      p:nth-child(2) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    .chef {
+      padding: 0;
+      display: block;
+      width: 100%;
+      .chef__img {
+        display: block;
+        width: 100%;
+        height: 460px;
+      }
+      .chef__text {
+        max-width: 100%;
+        padding: 30px;
+        display: inline-block;
+        .chef__title {
+          font-size: $text_xl;
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .guests {
+    padding: 50px 42px;
+    color: $color__primary;
+    h2 {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: $color__primary;
+      font-size: $text_xl;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    ul {
+      line-height: normal;
+      display: flex;
+      li {
+        display: flex;
+        margin: 0px 10px;
+        img {
+          display: block;
+          height: 67px;
+          margin-right: 13px;
+        }
+        .guests__text {
+          color: $color__primary;
+          font-size: $text_m;
+          .guests__name {
+            font-size: $text_l;
+            margin: 19px 0px;
+          }
+          .guests__job {
+            margin-top: 16px;
+            text-align: right;
+            opacity: 0.75;
+          }
+        }
+      }
+    }
+    @media (max-width: 755px) {
+      ul {
+        flex-direction: column;
+        align-items: center;
+        li {
+          max-width: 450px;
+        }
+      }
+    }
+  }
+  @include iphone6 {
+    .guests {
+      padding: 50px 2%;
+    }
+  }
+  /*map start*/
+  .map {
+    padding: 50px 42px;
+    background-color: $color__secondary;
+    h2 {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: $color__primary;
+      font-size: $text_xl;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+    .map__content {
+      display: flex;
+      justify-content: center;
+      .map__img {
+        align-self: center;
+        margin-right: 20px;
+        width: 50%;
+        height: 355px;
+        display: block;
+        background-image: url(/img/Map.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+      }
+      form {
+        max-width: 460px;
+        font-size: $text_s;
+        color: $color__primary;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        input {
+          margin-bottom: 12px;
+        }
+        label {
+          margin-bottom: 6px;
+        }
+        .vegetarian {
+          display: flex;
+          align-items: center;
+
+          div {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            input {
+              margin: 0 36px 0 6px;
+              display: inline-block;
+            }
+            label {
+              margin-top: 0;
+            }
+          }
+        }
+        .form__button {
+          align-self: flex-end;
+          margin-top: 30px;
+          button {
+            margin-left: 5.5px;
+          }
+          .pure-button {
+            padding: 0.4em 1.3em;
+          }
+
+          .button-success {
+            border-radius: 3px;
+            background-color: $color__accent;
+          }
+          .button-error {
+            border-radius: 3px;
+            background-color: rgb(0, 0, 0, 0.35);
+          }
+        }
+      }
+      @media (max-width: 747px) {
+        .map__img {
+          background-position: left;
+        }
+      }
+    }
+  }
+  @media (max-width: 560px) {
+    .map {
+      padding: 50px 2%;
+      .map__content {
+        flex-direction: column;
+        .map__img {
+          height: 200px;
+          background-position: center !important;
+          width: 100% !important;
+          margin-right: 0px !important;
+        }
+        form {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

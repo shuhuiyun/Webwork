@@ -1,0 +1,61 @@
+@use "../utils" as *;
+@use "../layout/grid" as *;
+footer {
+  width: 100%;
+  background-color: $color__bg;
+  display: flex;
+  justify-content: space-between;
+  color: $color__primary;
+  padding: 50px 43px;
+  .footer__text {
+    display: flex;
+    width: 100%;
+    line-height: normal;
+    li {
+      max-width: 299px;
+      margin-right: 20px;
+      p {
+        &:first-child {
+          font-size: 1.8rem;
+          margin-bottom: 8px;
+        }
+      }
+      ol {
+        li {
+          &::before {
+            content: "•";
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+    .footer__text--hide {
+      margin-bottom: 15px;
+    }
+  }
+  .footer__logo {
+    font-size: 36px;
+    a {
+      text-decoration: none;
+    }
+    p {
+      margin-top: 22px;
+    }
+  }
+  @media (max-width: 725px) {
+    .footer__text {
+      flex-direction: column;
+    }
+  }
+  @include mobile480 {
+    flex-direction: column;
+    .footer__text {
+      .footer__text--hide {
+        display: none;
+      }
+    }
+    .footer__logo {
+      margin-top: 30px;
+    }
+  }
+}

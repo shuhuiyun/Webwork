@@ -1,0 +1,73 @@
+@use "../utils" as *;
+@use "../vendors" as *;
+@use "../extensions/" as *;
+@use "../layout/grid" as *;
+.login {
+  padding: 50px;
+  text-align: center;
+  background-color: $color__bg;
+  .login__subtitle {
+    font-size: $text_xxl;
+    color: $color__primary;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+  .login__content {
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+    border-top: 4px solid $color__accent;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 15px;
+    h4 {
+      font-size: $text_l;
+      font-weight: 1000;
+      margin-bottom: 16px;
+      color: $color__primary;
+    }
+    form {
+      .email__address {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        input {
+          width: 100%;
+        }
+      }
+      .password {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        input {
+          width: 100%;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $color__accent;
+        font-size: $text_s;
+        margin-bottom: 36px;
+        line-height: normal;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      button {
+        align-self: flex-end;
+        background: $color__accent;
+        font-size: $text_s;
+        padding: 6px 48px;
+        border-radius: 3px;
+      }
+      .button-error {
+        background-color: rgba(0, 0, 0, 0.35);
+      }
+    }
+  }
+}
+@include mobile480 {
+  .login {
+    padding: 50px 3%;
+  }
+}
