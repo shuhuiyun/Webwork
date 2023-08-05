@@ -9,7 +9,7 @@
   justify-content: center;
   margin: 0 auto;
   .subnav {
-    width: 30%;
+    max-width: 280px;
     h3 {
       white-space: nowrap;
       font-size: $text_xl;
@@ -258,6 +258,7 @@
   .wrap__product {
     display: block;
     .subnav {
+      max-width: none;
       width: 100%;
       margin-bottom: 30px;
     }

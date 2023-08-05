@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #0d0200;
-  background-image: url(/img/header_desktop.png);
+  background-image: url(../img/header_desktop.png);
   background-position: center;
   max-width: 100%;
   min-height: 420px;
@@ -41,6 +41,6 @@
     }
   }
   @include mobile480 {
-    background-image: url(/img/header_mobile.png);
+    background-image: url(../img/header_mobile.png);
   }
 }

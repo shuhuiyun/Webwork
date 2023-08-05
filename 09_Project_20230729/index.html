@@ -2,20 +2,59 @@
 <html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./scss/all.css" />
     <title>六角西餐廳</title>
+
+    <link
+      rel="shortcut icon"
+      href="./img/burger_junk_food_fastfood_icon_212539.ico"
+    />
+    <meta
+      name="description"
+      content="我們是一家專為您提供最美味、最正宗的美式漢堡的餐廳。無論您是想品嚐經典的火烤牛肉漢堡，或是嘗試各種創意漢堡組合，我們的菜單絕對能滿足您的味蕾。"
+    />
+
+    <meta property="og:title" content="美式漢堡餐廳 - 美味漢堡的天堂" />
+    <meta
+      property="og:description"
+      content="歡迎光臨我們的美式漢堡餐廳！無論您是想品嚐經典的火烤牛肉漢堡，或是嘗試各種創意漢堡組合，我們的菜單絕對能滿足您的味蕾。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/" />
+    <meta
+      property="og:image"
+      content="https://github.com/shuhuiyun/Webwork/blob/main/09_Project_20230729/img/FB-img.jpg?raw=true"
+    />
+
+    <link
+      href="./img/burger_junk_food_fastfood_icon_212539.ico"
+      rel="apple-touch-icon"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link rel="stylesheet" href="./scss/all.css" />
   </head>
   <body>
     <header>
+      <div class="loginmenu">
+        <a href="./login.html" target="_self">登入</a
+        ><a href="/register.html" target="_self">註冊</a>
+      </div>
       <div class="menu">
         <a href="" class="logo">
           <h1>六角西餐廳</h1>
         </a>
         <ul class="nav">
-          <li><a href="http://google.com">特色</a></li>
-          <li><a href="#">主廚</a></li>
-          <li><a href="#">地圖</a></li>
+          <li>
+            <a href="#special">特色</a>
+          </li>
+          <li><a href="#chef">主廚</a></li>
+          <li><a href="#map">地圖</a></li>
+          <li><a href="/product.html" target="_self">訂購</a></li>
+          <li class="login__button">
+            <a href="./login.html" target="_self">登入</a
+            ><a href="/register.html" target="_self">註冊</a>
+          </li>
         </ul>
       </div>
       <a href="#" class="hamburger" title="menu">
@@ -36,7 +75,7 @@
     </div>
     <div class="wrap">
       <div class="feature__title">
-        <div class="feature__text">
+        <div class="feature__text" id="special">
           <h2>
             客人總是在詢問
             <br />
@@ -74,7 +113,7 @@
           </ul>
         </div>
       </div>
-      <div class="chef">
+      <div class="chef" id="chef">
         <div class="chef__img"></div>
         <div class="chef__text">
           <p class="chef__title">今日主廚：<br />帕金森、梅在帕</p>
@@ -127,10 +166,10 @@
           </li>
         </ul>
       </div>
-      <div class="map">
+      <div class="map" id="map">
         <h2>我們的位置不太夠坐 <br />要不要先定位呢？</h2>
         <div class="map__content">
-          <div class="map__img"></div>
+          <div class="map__img"><img src="./img/Map.png" alt="地圖" /></div>
           <form action="index.html" class="pure-form pure-form-stacked">
             <label for="person">姓名</label>
             <input

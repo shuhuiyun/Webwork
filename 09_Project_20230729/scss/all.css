@@ -1056,32 +1056,33 @@ a.pure-button-selected {
   /* this is a maroon */
 }
 
-.loginmenu {
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 42px;
+}
+header .loginmenu {
   width: 100%;
   text-align: right;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 8px 42px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 16px 8px 0px 0px;
+  display: flex;
+  justify-content: right;
 }
-.loginmenu a {
+header .loginmenu a {
   font-size: 14px;
   padding: 0 8px;
   text-decoration: none;
   color: #fff;
 }
-.loginmenu a:first-child::after {
+header .loginmenu a:first-child::after {
   content: "|";
   margin-left: 16px;
   color: #fff;
 }
-.loginmenu a:hover {
+header .loginmenu a:hover {
   color: #f56c23;
-}
-
-header {
-  position: absolute;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 0px 42px;
 }
 header .menu {
   min-height: 52px;
@@ -1220,7 +1221,7 @@ header .active span {
     text-align: center;
   }
   header .menu .m-open {
-    max-height: 200px;
+    max-height: 1000px;
     transition: top 0.5s;
     transition: max-height 1s ease;
   }
@@ -1229,6 +1230,13 @@ header .active span {
   }
   header .menu .m-open li a::before {
     background-color: rgba(255, 255, 255, 0);
+  }
+  header .menu .m-open .login__button {
+    display: flex;
+    justify-content: center;
+  }
+  header .menu .m-open .login__button a:first-child {
+    border-right: 1px solid #fff;
   }
   header .hamburger {
     display: block;
@@ -1241,7 +1249,7 @@ header .active span {
   justify-content: center;
   align-items: center;
   background-color: #0d0200;
-  background-image: url(/img/header_desktop.png);
+  background-image: url(../img/header_desktop.png);
   background-position: center;
   max-width: 100%;
   min-height: 420px;
@@ -1278,7 +1286,7 @@ header .active span {
 }
 @media (max-width: 480px) {
   .banner {
-    background-image: url(/img/header_mobile.png);
+    background-image: url(../img/header_mobile.png);
   }
 }
 
@@ -1422,7 +1430,7 @@ footer .footer__logo p {
 }
 .wrap .chef .chef__img {
   display: block;
-  background-image: url(/img/main_chef_brown.png);
+  background-image: url(../img/main_chef_brown.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1540,18 +1548,14 @@ footer .footer__logo p {
   justify-content: center;
 }
 .wrap .map .map__content .map__img {
-  align-self: center;
-  margin-right: 20px;
-  width: 50%;
-  height: 355px;
-  display: block;
-  background-image: url(/img/Map.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
+  margin-right: 3%;
+}
+.wrap .map .map__content .map__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .wrap .map .map__content form {
-  max-width: 460px;
+  max-width: 300px;
   font-size: 14px;
   color: #3d1101;
   width: 50%;
@@ -1599,26 +1603,14 @@ footer .footer__logo p {
   border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.35);
 }
-@media (max-width: 747px) {
-  .wrap .map .map__content .map__img {
-    background-position: left;
-  }
-}
-@media (max-width: 560px) {
-  .wrap .map {
-    padding: 50px 2%;
-  }
+@media (max-width: 767px) {
   .wrap .map .map__content {
+    display: flex;
     flex-direction: column;
-  }
-  .wrap .map .map__content .map__img {
-    height: 200px;
-    background-position: center !important;
-    width: 100% !important;
-    margin-right: 0px !important;
+    align-items: center;
   }
   .wrap .map .map__content form {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
@@ -1630,7 +1622,7 @@ footer .footer__logo p {
   margin: 0 auto;
 }
 .wrap__product .subnav {
-  width: 30%;
+  max-width: 280px;
 }
 .wrap__product .subnav h3 {
   white-space: nowrap;
@@ -1867,6 +1859,7 @@ footer .footer__logo p {
     display: block;
   }
   .wrap__product .subnav {
+    max-width: none;
     width: 100%;
     margin-bottom: 30px;
   }

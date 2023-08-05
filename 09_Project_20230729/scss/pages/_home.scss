@@ -91,7 +91,7 @@
     width: 100%;
     .chef__img {
       display: block;
-      background-image: url(/img/main_chef_brown.png);
+      background-image: url(../img/main_chef_brown.png);
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
@@ -209,19 +209,15 @@
     .map__content {
       display: flex;
       justify-content: center;
+
       .map__img {
-        align-self: center;
-        margin-right: 20px;
-        width: 50%;
-        height: 355px;
-        display: block;
-        background-image: url(/img/Map.png);
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: cover;
+        margin-right: 3%;
+        img {
+          object-fit: contain;
+        }
       }
       form {
-        max-width: 460px;
+        max-width: 300px;
         font-size: $text_s;
         color: $color__primary;
         width: 50%;
@@ -271,26 +267,14 @@
           }
         }
       }
-      @media (max-width: 747px) {
-        .map__img {
-          background-position: left;
-        }
-      }
     }
-  }
-  @media (max-width: 560px) {
-    .map {
-      padding: 50px 2%;
+    @media (max-width: 767px) {
       .map__content {
+        display: flex;
         flex-direction: column;
-        .map__img {
-          height: 200px;
-          background-position: center !important;
-          width: 100% !important;
-          margin-right: 0px !important;
-        }
+        align-items: center;
         form {
-          width: 100% !important;
+          width: 100%;
         }
       }
     }

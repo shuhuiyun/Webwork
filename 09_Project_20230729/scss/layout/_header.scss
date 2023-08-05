@@ -2,33 +2,35 @@
 @use "../vendors" as *;
 @use "../extensions/" as *;
 @use "../layout/grid" as *;
-.loginmenu {
-  width: 100%;
-  text-align: right;
-  background-color: rgba($color: #000000, $alpha: 0.6);
-  padding: 8px $header_padding;
-  a {
-    font-size: $text_s;
-    padding: 0 8px;
-    text-decoration: none;
-    color: #fff;
-    &:first-child {
-      &::after {
-        content: "|";
-        margin-left: 16px;
-        color: #fff;
-      }
-    }
-    &:hover {
-      color: $color__accent;
-    }
-  }
-}
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: $header_bgcolor;
   padding: 0px $header_padding;
+  .loginmenu {
+    width: 100%;
+    text-align: right;
+    background-color: rgba($color: #000000, $alpha: 0);
+    padding: 16px 8px 0px 0px;
+    display: flex;
+    justify-content: right;
+    a {
+      font-size: $text_s;
+      padding: 0 8px;
+      text-decoration: none;
+      color: #fff;
+      &:first-child {
+        &::after {
+          content: "|";
+          margin-left: 16px;
+          color: #fff;
+        }
+      }
+      &:hover {
+        color: $color__accent;
+      }
+    }
+  }
   .menu {
     min-height: 52px;
     display: flex;
@@ -74,7 +76,7 @@ header {
         text-align: center;
       }
       .m-open {
-        max-height: 200px;
+        max-height: 1000px;
         transition: top 0.5s;
         transition: max-height 1s ease;
         li {
@@ -82,6 +84,15 @@ header {
           a {
             &::before {
               background-color: #ffffff00;
+            }
+          }
+        }
+        .login__button {
+          display: flex;
+          justify-content: center;
+          a {
+            &:first-child {
+              border-right: 1px solid #fff;
             }
           }
         }
