@@ -50,7 +50,7 @@
 @mixin hamburger {
   position: absolute;
   z-index: 9999;
-  top: 0;
+  top: 30px;
   width: $hamburger-w-h;
   height: $hamburger-w-h;
   span {

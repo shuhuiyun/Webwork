@@ -85,6 +85,7 @@ time,
 mark,
 audio,
 video {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   border: 0;
@@ -1057,6 +1058,8 @@ a.pure-button-selected {
 }
 
 header {
+  scroll-behavior: smooth;
+  z-index: 9999;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -1147,11 +1150,14 @@ header .nav a:hover::before, header .nav a:focus::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
+header .nav .login__button {
+  color: aqua;
+}
 header .hamburger {
   display: none;
   position: absolute;
   z-index: 9999;
-  top: 0;
+  top: 30px;
   width: 52px;
   height: 52px;
 }
@@ -1235,8 +1241,8 @@ header .active span {
     display: flex;
     justify-content: center;
   }
-  header .menu .m-open .login__button a:first-child {
-    border-right: 1px solid #fff;
+  header .menu .m-open .login__button a:first-child::after {
+    content: "|";
   }
   header .hamburger {
     display: block;

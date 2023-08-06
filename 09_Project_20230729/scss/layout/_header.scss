@@ -3,6 +3,7 @@
 @use "../extensions/" as *;
 @use "../layout/grid" as *;
 header {
+  z-index: 9999;
   position: fixed;
   width: 100%;
   background-color: $header_bgcolor;
@@ -50,8 +51,12 @@ header {
       }
     }
   }
+
   .nav {
     @include menu__underline;
+    .login__button {
+      color: aqua;
+    }
   }
   .hamburger {
     display: none;
@@ -92,7 +97,9 @@ header {
           justify-content: center;
           a {
             &:first-child {
-              border-right: 1px solid #fff;
+              &::after {
+                content: "|";
+              }
             }
           }
         }
@@ -100,6 +107,7 @@ header {
     }
     .hamburger {
       display: block;
+
       right: calc((($hamburger-w-h - 20px) - $hamburger-span-w) / 2);
     }
   }
