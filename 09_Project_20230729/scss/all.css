@@ -1058,7 +1058,6 @@ a.pure-button-selected {
 }
 
 header {
-  scroll-behavior: smooth;
   z-index: 9999;
   position: fixed;
   width: 100%;
@@ -1320,6 +1319,10 @@ footer .footer__text li p:first-child {
 footer .footer__text li ol li::before {
   content: "•";
   margin-right: 3px;
+}
+footer .footer__text li ol li a {
+  text-decoration: none;
+  color: #3d1101;
 }
 footer .footer__text .footer__text--hide {
   margin-bottom: 15px;

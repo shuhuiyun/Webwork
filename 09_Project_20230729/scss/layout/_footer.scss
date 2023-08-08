@@ -26,6 +26,10 @@ footer {
             content: "•";
             margin-right: 3px;
           }
+          a {
+            text-decoration: none;
+            color: $color__primary;
+          }
         }
       }
     }
