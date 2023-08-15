@@ -62,7 +62,7 @@
       }
     }
   }
-  @media (max-width: 735px) {
+  @include mobile {
     .feature__title {
       ul {
         flex-direction: column;
@@ -80,6 +80,7 @@
       }
     }
   }
+
   /*chef start*/
   .chef {
     margin-top: 50px;
@@ -115,7 +116,7 @@
       }
     }
   }
-  @media (max-width: 720px) {
+  @include mobile {
     .chef {
       padding: 0;
       display: block;
@@ -177,7 +178,7 @@
         }
       }
     }
-    @media (max-width: 755px) {
+    @include mobile {
       ul {
         flex-direction: column;
         align-items: center;
@@ -268,7 +269,7 @@
         }
       }
     }
-    @media (max-width: 767px) {
+    @include mobile {
       .map__content {
         display: flex;
         flex-direction: column;

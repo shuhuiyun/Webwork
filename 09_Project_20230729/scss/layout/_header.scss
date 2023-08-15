@@ -2,7 +2,7 @@
 @use "../vendors" as *;
 @use "../extensions/" as *;
 @use "../layout/grid" as *;
-header {
+.header__container {
   z-index: 9999;
   position: fixed;
   width: 100%;

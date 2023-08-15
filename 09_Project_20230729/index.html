@@ -2,6 +2,7 @@
 <html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>六角西餐廳</title>
 
     <link
@@ -35,7 +36,7 @@
     <link rel="stylesheet" href="./scss/all.css" />
   </head>
   <body>
-    <header>
+    <header class="header__container">
       <div class="loginmenu">
         <a href="login.html" target="_self">登入</a
         ><a href="register.html" target="_self">註冊</a>
@@ -133,7 +134,7 @@
           <li>
             <img src="./img/avatar_1.png" alt="客戶頭像" />
             <div class="guests__text">
-              <p class="guests__name">高雄一口吃</p>
+              <h3 class="guests__name">高雄一口吃</h3>
               <p>
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
@@ -143,7 +144,7 @@
           <li>
             <img src="./img/avatar_2.png" alt="客戶頭像" />
             <div class="guests__text">
-              <p class="guests__name">廟口小霸王</p>
+              <h3 class="guests__name">廟口小霸王</h3>
               <p>
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
@@ -153,7 +154,7 @@
           <li>
             <img src="./img/avatar_3.png" alt="客戶頭像" />
             <div class="guests__text">
-              <p class="guests__name">春天也來了</p>
+              <h3 class="guests__name">春天也來了</h3>
               <p>
                 自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
               </p>
@@ -172,27 +173,27 @@
               id="person"
               type="text"
               placeholder="請輸入姓名"
-              name="person"
+              name="name"
             />
             <label for="tel">電話</label>
-            <input id="tel" type="tel" placeholder="請輸入電話" name="tel" />
+            <input id="tel" type="tel" placeholder="請輸入電話" name="phone" />
             <label for="mail">信箱</label>
             <input
               id="mail"
               type="email"
               placeholder="test@gmail.com"
-              name="person"
+              name="e-mail"
             />
-            <label for="person">人數</label>
+            <label for="number">人數</label>
             <input
-              id="person"
+              id="number"
               type="number"
               min="1"
               max="30"
               placeholder="請輸入1-30人數"
-              name="person"
+              name="visitors"
             />
-            <label for="person">是否需要素食</label>
+            <label for="vegetarian">是否需要素食</label>
             <div class="vegetarian">
               <div>
                 <label for="yes">是</label>
@@ -205,12 +206,12 @@
                 />
               </div>
               <div>
-                <label for="dewey">否</label>
+                <label for="no">否</label>
                 <input type="radio" id="no" name="vegetarian" value="no" />
               </div>
             </div>
             <div class="form__button">
-              <button type="submit" class="button-error pure-button">
+              <button type="reset" class="button-error pure-button">
                 取消
               </button>
               <button type="submit" class="button-success pure-button">
@@ -221,17 +222,17 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer__container">
       <ul class="footer__text">
         <li class="footer__text--hide">
-          <p>關於 六角西餐廳</p>
+          <h3>關於 六角西餐廳</h3>
           <p>
             Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
             Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
           </p>
         </li>
         <li>
-          <p>聯絡方式</p>
+          <h3>聯絡方式</h3>
           <ol>
             <li>高雄市中正五路到底</li>
             <li>
@@ -244,7 +245,7 @@
         </li>
       </ul>
       <div class="footer__logo">
-        <img src="./img/logo_l(null).svg" alt="" />
+        <h2>六角西餐廳</h2>
         <p>
           <a href="http://google.com" target="_blank">
             <i

@@ -30,6 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: start;
+
         input {
           width: 100%;
         }
@@ -43,6 +44,7 @@
           width: 100%;
         }
       }
+
       a {
         text-decoration: none;
         color: $color__accent;
@@ -51,6 +53,12 @@
         line-height: normal;
         &:hover {
           text-decoration: underline;
+        }
+      }
+      .register__button {
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
         }
       }
       button {

@@ -171,6 +171,7 @@
               font-weight: bold;
             }
             button {
+              cursor: pointer;
               background-color: $color__bg;
               font-size: 16px;
               width: 100%;
@@ -234,7 +235,7 @@
         }
       }
     }
-    @media (max-width: 1000px) {
+    @include ipad {
       .product__card {
         ul {
           li {
@@ -243,7 +244,7 @@
         }
       }
     }
-    @media (max-width: 700px) {
+    @include mobile {
       .product__card {
         ul {
           li {
@@ -254,7 +255,7 @@
     }
   }
 }
-@media (max-width: 580px) {
+@include mobile480 {
   .wrap__product {
     display: block;
     .subnav {

@@ -147,6 +147,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 /*基本字型*/
@@ -159,399 +160,6 @@ body {
 /*text*/
 /*hamburger*/
 /*hamburger menu*/
-/*!
-Pure v0.6.0
-Copyright 2014 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-https://github.com/yahoo/pure/blob/master/LICENSE.md
-*/
-/*csslint box-model:false*/
-/*
-Box-model set to false because we're setting a height on select elements, which
-also have border and padding. This is done because some browsers don't render
-the padding. We explicitly set the box-model for select elements to border-box,
-so we can ignore the csslint warning.
-*/
-.pure-form input[type=text],
-.pure-form input[type=password],
-.pure-form input[type=email],
-.pure-form input[type=url],
-.pure-form input[type=date],
-.pure-form input[type=month],
-.pure-form input[type=time],
-.pure-form input[type=datetime],
-.pure-form input[type=datetime-local],
-.pure-form input[type=week],
-.pure-form input[type=number],
-.pure-form input[type=search],
-.pure-form input[type=tel],
-.pure-form input[type=color],
-.pure-form select,
-.pure-form textarea {
-  padding: 0.5em 0.6em;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 3px #ddd;
-  border-radius: 4px;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-.pure-form input:not([type]) {
-  padding: 0.5em 0.6em;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-shadow: inset 0 1px 3px #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
-/* May be able to remove this tweak as color inputs become more standardized across browsers. */
-.pure-form input[type=color] {
-  padding: 0.2em 0.5em;
-}
-
-.pure-form input[type=text]:focus,
-.pure-form input[type=password]:focus,
-.pure-form input[type=email]:focus,
-.pure-form input[type=url]:focus,
-.pure-form input[type=date]:focus,
-.pure-form input[type=month]:focus,
-.pure-form input[type=time]:focus,
-.pure-form input[type=datetime]:focus,
-.pure-form input[type=datetime-local]:focus,
-.pure-form input[type=week]:focus,
-.pure-form input[type=number]:focus,
-.pure-form input[type=search]:focus,
-.pure-form input[type=tel]:focus,
-.pure-form input[type=color]:focus,
-.pure-form select:focus,
-.pure-form textarea:focus {
-  outline: 0;
-  border-color: #129fea;
-}
-
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-.pure-form input:not([type]):focus {
-  outline: 0;
-  border-color: #129fea;
-}
-
-.pure-form input[type=file]:focus,
-.pure-form input[type=radio]:focus,
-.pure-form input[type=checkbox]:focus {
-  outline: thin solid #129fea;
-  outline: 1px auto #129fea;
-}
-
-.pure-form .pure-checkbox,
-.pure-form .pure-radio {
-  margin: 0.5em 0;
-  display: block;
-}
-
-.pure-form input[type=text][disabled],
-.pure-form input[type=password][disabled],
-.pure-form input[type=email][disabled],
-.pure-form input[type=url][disabled],
-.pure-form input[type=date][disabled],
-.pure-form input[type=month][disabled],
-.pure-form input[type=time][disabled],
-.pure-form input[type=datetime][disabled],
-.pure-form input[type=datetime-local][disabled],
-.pure-form input[type=week][disabled],
-.pure-form input[type=number][disabled],
-.pure-form input[type=search][disabled],
-.pure-form input[type=tel][disabled],
-.pure-form input[type=color][disabled],
-.pure-form select[disabled],
-.pure-form textarea[disabled] {
-  cursor: not-allowed;
-  background-color: #eaeded;
-  color: #cad2d3;
-}
-
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-.pure-form input:not([type])[disabled] {
-  cursor: not-allowed;
-  background-color: #eaeded;
-  color: #cad2d3;
-}
-
-.pure-form input[readonly],
-.pure-form select[readonly],
-.pure-form textarea[readonly] {
-  background-color: #eee; /* menu hover bg color */
-  color: #777; /* menu text color */
-  border-color: #ccc;
-}
-
-.pure-form input:focus:invalid,
-.pure-form textarea:focus:invalid,
-.pure-form select:focus:invalid {
-  color: #b94a48;
-  border-color: #e9322d;
-}
-
-.pure-form input[type=file]:focus:invalid:focus,
-.pure-form input[type=radio]:focus:invalid:focus,
-.pure-form input[type=checkbox]:focus:invalid:focus {
-  outline-color: #e9322d;
-}
-
-.pure-form select {
-  /* Normalizes the height; padding is not sufficient. */
-  height: 2.25em;
-  border: 1px solid #ccc;
-  background-color: white;
-}
-
-.pure-form select[multiple] {
-  height: auto;
-}
-
-.pure-form label {
-  margin: 0.5em 0 0.2em;
-}
-
-.pure-form fieldset {
-  margin: 0;
-  padding: 0.35em 0 0.75em;
-  border: 0;
-}
-
-.pure-form legend {
-  display: block;
-  width: 100%;
-  padding: 0.3em 0;
-  margin-bottom: 0.3em;
-  color: #333;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.pure-form-stacked input[type=text],
-.pure-form-stacked input[type=password],
-.pure-form-stacked input[type=email],
-.pure-form-stacked input[type=url],
-.pure-form-stacked input[type=date],
-.pure-form-stacked input[type=month],
-.pure-form-stacked input[type=time],
-.pure-form-stacked input[type=datetime],
-.pure-form-stacked input[type=datetime-local],
-.pure-form-stacked input[type=week],
-.pure-form-stacked input[type=number],
-.pure-form-stacked input[type=search],
-.pure-form-stacked input[type=tel],
-.pure-form-stacked input[type=color],
-.pure-form-stacked input[type=file],
-.pure-form-stacked select,
-.pure-form-stacked label,
-.pure-form-stacked textarea {
-  display: block;
-  margin: 0.25em 0;
-}
-
-/*
-Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
-since IE8 won't execute CSS that contains a CSS3 selector.
-*/
-.pure-form-stacked input:not([type]) {
-  display: block;
-  margin: 0.25em 0;
-}
-
-.pure-form-aligned input,
-.pure-form-aligned textarea,
-.pure-form-aligned select,
-.pure-form-aligned .pure-help-inline,
-.pure-form-message-inline {
-  display: inline-block;
-  display: inline;
-  zoom: 1;
-  vertical-align: middle;
-}
-
-.pure-form-aligned textarea {
-  vertical-align: top;
-}
-
-/* Aligned Forms */
-.pure-form-aligned .pure-control-group {
-  margin-bottom: 0.5em;
-}
-
-.pure-form-aligned .pure-control-group label {
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
-  width: 10em;
-  margin: 0 1em 0 0;
-}
-
-.pure-form-aligned .pure-controls {
-  margin: 1.5em 0 0 11em;
-}
-
-/* Rounded Inputs */
-.pure-form input.pure-input-rounded,
-.pure-form .pure-input-rounded {
-  border-radius: 2em;
-  padding: 0.5em 1em;
-}
-
-/* Grouped Inputs */
-.pure-form .pure-group fieldset {
-  margin-bottom: 10px;
-}
-
-.pure-form .pure-group input,
-.pure-form .pure-group textarea {
-  display: block;
-  padding: 10px;
-  margin: 0 0 -1px;
-  border-radius: 0;
-  position: relative;
-  top: -1px;
-}
-
-.pure-form .pure-group input:focus,
-.pure-form .pure-group textarea:focus {
-  z-index: 3;
-}
-
-.pure-form .pure-group input:first-child,
-.pure-form .pure-group textarea:first-child {
-  top: 1px;
-  border-radius: 4px 4px 0 0;
-  margin: 0;
-}
-
-.pure-form .pure-group input:first-child:last-child,
-.pure-form .pure-group textarea:first-child:last-child {
-  top: 1px;
-  border-radius: 4px;
-  margin: 0;
-}
-
-.pure-form .pure-group input:last-child,
-.pure-form .pure-group textarea:last-child {
-  top: -2px;
-  border-radius: 0 0 4px 4px;
-  margin: 0;
-}
-
-.pure-form .pure-group button {
-  margin: 0.35em 0;
-}
-
-.pure-form .pure-input-1 {
-  width: 100%;
-}
-
-.pure-form .pure-input-2-3 {
-  width: 66%;
-}
-
-.pure-form .pure-input-1-2 {
-  width: 50%;
-}
-
-.pure-form .pure-input-1-3 {
-  width: 33%;
-}
-
-.pure-form .pure-input-1-4 {
-  width: 25%;
-}
-
-/* Inline help for forms */
-/* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
-.pure-form .pure-help-inline,
-.pure-form-message-inline {
-  display: inline-block;
-  padding-left: 0.3em;
-  color: #666;
-  vertical-align: middle;
-  font-size: 0.875em;
-}
-
-/* Block help for forms */
-.pure-form-message {
-  display: block;
-  color: #666;
-  font-size: 0.875em;
-}
-
-@media only screen and (max-width: 480px) {
-  .pure-form button[type=submit] {
-    margin: 0.7em 0 0;
-  }
-  .pure-form input:not([type]),
-  .pure-form input[type=text],
-  .pure-form input[type=password],
-  .pure-form input[type=email],
-  .pure-form input[type=url],
-  .pure-form input[type=date],
-  .pure-form input[type=month],
-  .pure-form input[type=time],
-  .pure-form input[type=datetime],
-  .pure-form input[type=datetime-local],
-  .pure-form input[type=week],
-  .pure-form input[type=number],
-  .pure-form input[type=search],
-  .pure-form input[type=tel],
-  .pure-form input[type=color],
-  .pure-form label {
-    margin-bottom: 0.3em;
-    display: block;
-  }
-  .pure-group input:not([type]),
-  .pure-group input[type=text],
-  .pure-group input[type=password],
-  .pure-group input[type=email],
-  .pure-group input[type=url],
-  .pure-group input[type=date],
-  .pure-group input[type=month],
-  .pure-group input[type=time],
-  .pure-group input[type=datetime],
-  .pure-group input[type=datetime-local],
-  .pure-group input[type=week],
-  .pure-group input[type=number],
-  .pure-group input[type=search],
-  .pure-group input[type=tel],
-  .pure-group input[type=color] {
-    margin-bottom: 0;
-  }
-  .pure-form-aligned .pure-control-group label {
-    margin-bottom: 0.3em;
-    text-align: left;
-    display: block;
-    width: 100%;
-  }
-  .pure-form-aligned .pure-controls {
-    margin: 1.5em 0 0 0;
-  }
-  /* NOTE: pure-help-inline is deprecated. Use .pure-form-message-inline instead. */
-  .pure-form .pure-help-inline,
-  .pure-form-message-inline,
-  .pure-form-message {
-    display: block;
-    font-size: 0.75em;
-    /* Increased bottom padding to make it group with its related input element. */
-    padding: 0.2em 0 0.8em;
-  }
-}
 /*!
 Pure v0.6.0
 Copyright 2014 Yahoo! Inc. All rights reserved.
@@ -1057,14 +665,14 @@ a.pure-button-selected {
   /* this is a maroon */
 }
 
-header {
+.header__container {
   z-index: 9999;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0px 42px;
 }
-header .loginmenu {
+.header__container .loginmenu {
   width: 100%;
   text-align: right;
   background-color: rgba(0, 0, 0, 0);
@@ -1072,27 +680,27 @@ header .loginmenu {
   display: flex;
   justify-content: right;
 }
-header .loginmenu a {
+.header__container .loginmenu a {
   font-size: 14px;
   padding: 0 8px;
   text-decoration: none;
   color: #fff;
 }
-header .loginmenu a:first-child::after {
+.header__container .loginmenu a:first-child::after {
   content: "|";
   margin-left: 16px;
   color: #fff;
 }
-header .loginmenu a:hover {
+.header__container .loginmenu a:hover {
   color: #f56c23;
 }
-header .menu {
+.header__container .menu {
   min-height: 52px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .menu a.logo {
+.header__container .menu a.logo {
   display: block;
   align-self: flex-start;
   width: 120px;
@@ -1102,17 +710,17 @@ header .menu a.logo {
   background-position: center;
   background-repeat: no-repeat;
 }
-header .menu a.logo h1 {
+.header__container .menu a.logo h1 {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
 }
-header .nav {
+.header__container .nav {
   list-style: none;
   display: flex;
   transition: all 1s;
 }
-header .nav a {
+.header__container .nav a {
   text-decoration: none;
   transition: color 0.1s, background-color 0.1s;
   position: relative;
@@ -1125,11 +733,11 @@ header .nav a {
   transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
   color: rgb(255, 255, 255);
 }
-header .nav a:hover, header .nav a:focus, header .nav a:active {
+.header__container .nav a:hover, .header__container .nav a:focus, .header__container .nav a:active {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-header .nav a::before {
+.header__container .nav a::before {
   content: "";
   display: block;
   position: absolute;
@@ -1142,17 +750,17 @@ header .nav a::before {
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out;
 }
-header .nav a:active::before {
+.header__container .nav a:active::before {
   background-color: #000;
 }
-header .nav a:hover::before, header .nav a:focus::before {
+.header__container .nav a:hover::before, .header__container .nav a:focus::before {
   transform-origin: left top;
   transform: scale(1, 1);
 }
-header .nav .login__button {
+.header__container .nav .login__button {
   color: aqua;
 }
-header .hamburger {
+.header__container .hamburger {
   display: none;
   position: absolute;
   z-index: 9999;
@@ -1160,7 +768,7 @@ header .hamburger {
   width: 52px;
   height: 52px;
 }
-header .hamburger span {
+.header__container .hamburger span {
   display: inline-block;
   transition: all 0.4s;
   box-sizing: border-box;
@@ -1170,19 +778,19 @@ header .hamburger span {
   height: 3px;
   background: #fff;
 }
-header .hamburger span:nth-child(1) {
+.header__container .hamburger span:nth-child(1) {
   top: 19px;
   left: clac(30px)/2;
 }
-header .hamburger span:nth-child(2) {
+.header__container .hamburger span:nth-child(2) {
   top: 26px;
   left: clac(30px)/2;
 }
-header .hamburger span:nth-child(3) {
+.header__container .hamburger span:nth-child(3) {
   top: 33px;
   left: clac(30px)/2;
 }
-header .hamburger::after {
+.header__container .hamburger::after {
   z-index: 999;
   content: "MENU";
   position: absolute;
@@ -1193,30 +801,30 @@ header .hamburger::after {
   color: rgba(255, 255, 255, 0);
   scale: 0.8;
 }
-header .hamburger.active::after {
+.header__container .hamburger.active::after {
   color: rgba(255, 255, 255, 0);
 }
-header .active span:nth-child(1) {
+.header__container .active span:nth-child(1) {
   transform: translateY(7px) rotate(-315deg);
 }
-header .active span:nth-child(2) {
+.header__container .active span:nth-child(2) {
   opacity: 0;
 }
-header .active span:nth-child(3) {
+.header__container .active span:nth-child(3) {
   transform: translateY(-7px) rotate(315deg);
 }
-header .active span {
+.header__container .active span {
   background-color: #fff;
 }
 @media (max-width: 480px) {
-  header {
+  .header__container {
     background-color: #000;
     padding: 0px 22px;
   }
-  header .menu {
+  .header__container .menu {
     flex-direction: column;
   }
-  header .menu .nav {
+  .header__container .menu .nav {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 1s ease;
@@ -1225,25 +833,25 @@ header .active span {
     display: block;
     text-align: center;
   }
-  header .menu .m-open {
+  .header__container .menu .m-open {
     max-height: 1000px;
     transition: top 0.5s;
     transition: max-height 1s ease;
   }
-  header .menu .m-open li {
+  .header__container .menu .m-open li {
     width: 100%;
   }
-  header .menu .m-open li a::before {
+  .header__container .menu .m-open li a::before {
     background-color: rgba(255, 255, 255, 0);
   }
-  header .menu .m-open .login__button {
+  .header__container .menu .m-open .login__button {
     display: flex;
     justify-content: center;
   }
-  header .menu .m-open .login__button a:first-child::after {
+  .header__container .menu .m-open .login__button a:first-child::after {
     content: "|";
   }
-  header .hamburger {
+  .header__container .hamburger {
     display: block;
     right: 5px;
   }
@@ -1295,60 +903,68 @@ header .active span {
   }
 }
 
-footer {
-  width: 100%;
+.footer__container {
   background-color: #efe9e7;
   display: flex;
   justify-content: space-between;
   color: #3d1101;
   padding: 50px 43px;
 }
-footer .footer__text {
+.footer__container .footer__text {
   display: flex;
   width: 100%;
   line-height: normal;
 }
-footer .footer__text li {
+.footer__container .footer__text li {
   max-width: 299px;
   margin-right: 20px;
 }
-footer .footer__text li p:first-child {
+.footer__container .footer__text li h3:first-child {
   font-size: 1.8rem;
   margin-bottom: 8px;
 }
-footer .footer__text li ol li::before {
+.footer__container .footer__text li ol li::before {
   content: "•";
   margin-right: 3px;
 }
-footer .footer__text li ol li a {
+.footer__container .footer__text li ol li a {
   text-decoration: none;
   color: #3d1101;
 }
-footer .footer__text .footer__text--hide {
+.footer__container .footer__text .footer__text--hide {
   margin-bottom: 15px;
 }
-footer .footer__logo {
+.footer__container .footer__logo {
   font-size: 36px;
 }
-footer .footer__logo a {
+.footer__container .footer__logo h2 {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url("/img/logo_l.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.footer__container .footer__logo a {
   text-decoration: none;
 }
-footer .footer__logo p {
+.footer__container .footer__logo p {
   margin-top: 22px;
 }
-@media (max-width: 725px) {
-  footer .footer__text {
+@media (max-width: 767px) {
+  .footer__container .footer__text {
     flex-direction: column;
   }
 }
 @media (max-width: 480px) {
-  footer {
+  .footer__container {
     flex-direction: column;
   }
-  footer .footer__text .footer__text--hide {
+  .footer__container .footer__text .footer__text--hide {
     display: none;
   }
-  footer .footer__logo {
+  .footer__container .footer__logo {
     margin-top: 30px;
   }
 }
@@ -1412,7 +1028,7 @@ footer .footer__logo p {
   line-height: normal;
   color: #3d1101;
 }
-@media (max-width: 735px) {
+@media (max-width: 767px) {
   .wrap .feature__title ul {
     flex-direction: column;
     align-items: center;
@@ -1461,7 +1077,7 @@ footer .footer__logo p {
 .wrap .chef .chef__text p:nth-child(2) {
   margin-bottom: 20px;
 }
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .wrap .chef {
     padding: 0;
     display: block;
@@ -1524,7 +1140,7 @@ footer .footer__logo p {
   text-align: right;
   opacity: 0.75;
 }
-@media (max-width: 755px) {
+@media (max-width: 767px) {
   .wrap .guests ul {
     flex-direction: column;
     align-items: center;
@@ -1793,6 +1409,7 @@ footer .footer__logo p {
   font-weight: bold;
 }
 .wrap__product .content .product__card ul li .text__content button {
+  cursor: pointer;
   background-color: #efe9e7;
   font-size: 16px;
   width: 100%;
@@ -1852,18 +1469,18 @@ footer .footer__logo p {
   bottom: -4px;
   right: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   .wrap__product .content .product__card ul li {
     width: 48%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   .wrap__product .content .product__card ul li {
     width: 100%;
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
   .wrap__product {
     display: block;
   }
@@ -1920,18 +1537,18 @@ footer .footer__logo p {
   margin-bottom: 16px;
   color: #3d1101;
 }
-.register .register__content .register__text {
+.register .register__text {
   color: #3d1101;
   display: flex;
   flex-direction: row;
 }
-.register .register__content .register__text p {
+.register .register__text p {
   text-align: start;
   line-height: normal;
   width: 50%;
   margin-right: 20px;
 }
-.register .register__content .register__text form {
+.register .register__text form {
   text-align: start;
   display: flex;
   flex-direction: column;
@@ -1940,31 +1557,31 @@ footer .footer__logo p {
   color: #3d1101;
   width: 50%;
 }
-.register .register__content .register__text form .email__address {
+.register .register__text form .email__address {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   width: 100%;
 }
-.register .register__content .register__text form .password {
+.register .register__text form .password {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.register .register__content .register__text form .password .password__input {
+.register .register__text form .password .password__input {
   margin-bottom: 12px;
 }
-.register .register__content .register__text form .password a {
+.register .register__text form .password a {
   text-decoration: none;
   color: #f56c23;
   font-size: 14px;
   margin-bottom: 36px;
   line-height: normal;
 }
-.register .register__content .register__text form .password a:hover {
+.register .register__text form .password a:hover {
   text-decoration: underline;
 }
-.register .register__content .register__text form button {
+.register .register__text form button {
   align-self: flex-end;
   background: #f56c23;
   font-size: 14px;
@@ -1972,21 +1589,21 @@ footer .footer__logo p {
   border-radius: 3px;
 }
 @media (max-width: 767px) {
-  .register .register__content .register__text {
+  .register .register__text {
     flex-direction: column;
     padding: 1%;
   }
-  .register .register__content .register__text p {
+  .register .register__text p {
     width: 100%;
     margin-bottom: 15px;
   }
-  .register .register__content .register__text form {
+  .register .register__text form {
     width: 100%;
   }
-  .register .register__content .register__text form .email__address {
+  .register .register__text form .email__address {
     max-width: 285px;
   }
-  .register .register__content .register__text form .password {
+  .register .register__text form .password {
     max-width: 285px;
   }
 }
@@ -2047,6 +1664,12 @@ footer .footer__logo p {
 }
 .login .login__content form a:hover {
   text-decoration: underline;
+}
+.login .login__content form .register__button {
+  text-decoration: none;
+}
+.login .login__content form .register__button:hover {
+  text-decoration: none;
 }
 .login .login__content form button {
   align-self: flex-end;

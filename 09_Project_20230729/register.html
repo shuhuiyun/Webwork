@@ -2,6 +2,7 @@
 <html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>六角西餐廳</title>
 
     <link
@@ -35,21 +36,21 @@
     <link rel="stylesheet" href="./scss/all.css" />
   </head>
   <body>
-    <header>
+    <header class="header__container">
       <div class="loginmenu">
         <a href="login.html" target="_self">登入</a
         ><a href="register.html" target="_self">註冊</a>
       </div>
       <div class="menu">
-        <a href="index.html" class="logo">
+        <a href="#" class="logo">
           <h1>六角西餐廳</h1>
         </a>
         <ul class="nav">
           <li>
-            <a href="#special">特色</a>
+            <a href="index.html#special">特色</a>
           </li>
-          <li><a href="#chef">主廚</a></li>
-          <li><a href="#map">地圖</a></li>
+          <li><a href="index.html#chef">主廚</a></li>
+          <li><a href="index.html#map">地圖</a></li>
           <li><a href="product.html" target="_self">訂購</a></li>
         </ul>
       </div>
@@ -102,17 +103,17 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer__container">
       <ul class="footer__text">
         <li class="footer__text--hide">
-          <p>關於 六角西餐廳</p>
+          <h3>關於 六角西餐廳</h3>
           <p>
             Curabitur lobortis id lorem id bibndum. Ut id consectetur magna.
             Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
           </p>
         </li>
         <li>
-          <p>聯絡方式</p>
+          <h3>聯絡方式</h3>
           <ol>
             <li>高雄市中正五路到底</li>
             <li>
@@ -125,7 +126,7 @@
         </li>
       </ul>
       <div class="footer__logo">
-        <img src="./img/logo_l(null).svg" alt="" />
+        <h2>六角西餐廳</h2>
         <p>
           <a href="http://google.com" target="_blank">
             <i
