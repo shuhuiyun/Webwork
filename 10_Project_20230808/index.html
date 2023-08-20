@@ -1,47 +1,181 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="zh-tw" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>波蒂的Blog</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/all.css" />
   </head>
   <body>
-    <button
-      type="button"
-      class="btn btn-outline-primary"
-      data-bs-toggle="button"
-      autocomplete="off"
-    >
-      Toggle button
-    </button>
-    <button
-      type="button"
-      class="btn btn-outline-primary active"
-      data-bs-toggle="button"
-      autocomplete="off"
-      aria-pressed="true"
-    >
-      Active toggle button
-    </button>
-    <button
-      type="button"
-      class="btn btn-outline-primary"
-      disabled
-      data-bs-toggle="button"
-      autocomplete="off"
-    >
-      Disabled toggle button
-    </button>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
+    <div class="container">
+      <header class="py-3 text-center border-bottom">
+        <a href="#" class="h2 link-dark text-decoration-none">波蒂的Blog</a>
+      </header>
+
+      <div class="overflow-auto py-1">       
+          <ul class="nav justify-content-between flex-nowrap text-nowrap">           
+            <li class="nav-item">
+              <a class="nav-link link-secondary" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-secondary" href="#">jQuery</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">RWD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">版型設計</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">框架入門</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#">動畫效果</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#">性能優化</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#">網路資安</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary" href="#">心情分享</a>
+        </li>
+          </ul>
+      
+    </div>
+
+     <div class="mb-4 p-4 p-md-5 text-white rounded-3 bg__size" style="background-image: url(img/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);">
+      <div class="col-md-6">
+        <h1 class="fst-italic display-5 fw-medium my-2 text__shadow" >網頁之美：<br>探索前端設計與互動</h1>
+        <p class="lead mb-4 box-shadow-lg text__shadow">在這篇文章中，我們將深入探討前端設計的精髓，探索如何通過色彩、排版和動畫來創造引人入勝的使用者體驗。無論您是初學者還是經驗豐富的前端開發者，本文將帶您穿越設計的迷人世界，並分享實用的技巧和最佳實踐，讓您的網頁在視覺和互動上都能獨樹一幟。</p>
+        <a href="#" class="lead  text-white text__shadow">繼續閱讀</a>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-lg-2 mb-5">
+      <div class="col mb-3 mb-lg-0">
+        <div class="card row g-0 flex-row h-100">
+          <div class="col ">
+            <div class="p-4 d-flex flex-column h-100">
+              <strong class="d-inline-block mb-2    text-primary">版型設計</strong>
+              <h3 class="mb-0">簡潔而有結構的佈局</h3>
+              <div class="mb-1 text-secondary">三月 12 日</div>
+              <p class="card-text mb-auto">網頁版型設計應該保持簡潔、易於導航，並具有清晰的結構。使用格線系統和區塊劃分，幫助將內容有條不紊地呈現給使用者。</p>
+              <a href="#" class="stretched-link mt-3">繼續閱讀</a>
+            </div>
+          </div>
+          <div class="col-4 d-none d-lg-block bg__size" style="background-image: url(/img/visual-design-pl9DrjAMV6I-unsplash.jpg);">
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card row g-0 flex-row h-100">
+          <div class="col">
+            <div class="p-4 d-flex flex-column h-100">
+              <strong class="d-inline-block mb-2 text-primary">網路資安</strong>
+              <h3 class="mb-0">保護個人網路安全</h3>
+              <div class="mb-1 text-secondary">二月 27 日</div>
+              <p class="card-text mb-auto ">
+                在數位時代，網路資安變得比以往任何時候都更加重要。隨著人們越來越多地依賴互聯網進行通信、交易和資訊查詢，保護個人網路安全變得至關重要。</p>
+              <a href="#" class="stretched-link mt-3">繼續閱讀</a>
+            </div>
+          </div>
+          <div class="col-4 d-none d-lg-block bg__size" style="background-image: url(/img/dan-nelson-ah-HeguOe9k-unsplash.jpg);">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="row g-md-5">
+  <div class="col-8">
+    <article>
+      <h2>從 CSS 到 Sass 教學，沒對齊就不對勁</h2>
+      <p class="mb-3">2023 年八月
+        <a href="#">波蒂</a>
+      </p>
+      <p><img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2FLiveCoding.jpg?alt=media&amp;token=5f263d49-6ada-4cb0-a61a-7c81921d1bb2" alt="#"></p>
+      <blockquote>
+      <p>會常常覺得 CSS 莫名其妙嗎？</p>
+      </blockquote>
+      <p><img class="img-fluid" src="https://media.giphy.com/media/13XW2MJE0XCoM0/giphy.gif" alt="#"></p>
+      <p>在實戰過程中我們常常會使用一些黑魔法來解決版面的問題，但程式碼是寫給其他人看的 (包含未來的自己)，在經常使用黑魔法的情況下總有一天可能會造成失控！</p>
+      <p>本次主題將來提升大家對於 CSS 的靈敏度，並且教同學許多小技巧，讓版面的開發更為靈巧及容易管理，課程包含：</p>
+      <ul>
+      <li>CSS 網格系統的觀念</li>
+      <li>CSS 與 Sass</li>
+      <li>後台切版的注意事項</li>
+      <li>CSS Flex</li>
+      </ul>
+      <h4 id="課程時間"><a href="#課程時間" class="headerlink" title="課程時間"></a>課程時間</h4><p>每週的線上問答 (週三晚上 7:30)，每週一個主題讓你聽得不要不要～。</p>
+      <p><img class="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/blog%2F2017%2F08%2Faug_course.jpg?alt=media&amp;token=971fce27-5267-4d1c-a7cd-b519a230d0bd" alt="#"></p>
+      <h4 id="報名辦法"><a href="#報名辦法" class="headerlink" title="報名辦法"></a>報名辦法</h4><p>凡 <strong>有註冊六角學院主要課程學員</strong>，在 Udemy 信箱每週都能收到課程通知(記得收信喔)，課程內容將無須額外付費，<strong>主要課程列表</strong> 如下：</p>
+      <ul>
+      <li>使用 HTML、CSS 開發一個網站</li>
+      <li>jQuery 網頁互動效果</li>
+      <li>JavaScript - 學徒的試煉</li>
+      <li>RWD 響應式網頁設計</li>
+      <li>一頁式金流商務網頁</li>
+      </ul>
+      <p><strong><a href="/courses/">&gt;&gt; 進入課程列表 &lt;&lt;</a></strong></p>
+      <h4 id="注意事項"><a href="#注意事項" class="headerlink" title="注意事項"></a>注意事項</h4><ul>
+      <li>建議具備基本 HTML, CSS 能力即可</li>
+      <li><strong>課程內容不一定會錄影，請同學盡量踴躍參加</strong></li>
+      </ul>
+      
+            
+          
+    </article>
+  </div>
+  <div class="col-4 d-none d-md-block ">
+    <div class="sticky-top" style="top:16px">
+      <div class="p-4 bg-light rounded">
+        <h4>關於我</h4>
+        <p class="mb-0">嗨！我是一位熱愛前端網頁設計的創意者，我的名字是波蒂。在數位世界裡，我一直在追求創造美麗、易於使用且具有影響力的網頁體驗。</p>
+      </div>
+      <div class="p-4">
+        <h4>過去的文章</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">2023年12月</a></li>
+          <li><a href="#">2023年11月</a></li>
+          <li><a href="#">2023年10月</a></li>
+          <li><a href="#">2023年09月</a></li>
+          <li><a href="#">2023年08月</a></li>
+          <li><a href="#">2023年07月</a></li>
+          <li><a href="#">2023年06月</a></li>
+          <li><a href="#">2023年05月</a></li>
+          <li><a href="#">2023年04月</a></li>
+          <li><a href="#">2023年03月</a></li>
+          <li><a href="#">2023年02月</a></li>
+          <li><a href="#">2023年01月</a></li>
+        </ol>
+      </div>
+      <div class="p-4">
+        <h4>關注我</h4>
+        <ul class="list-unstyled">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="bg-light py-4 border-top mt-5 text-center">
+  <p>Boostrap 5 練習作業</p>
+  <a href="#">Back to Top</a>
+</footer>
   </body>
 </html>

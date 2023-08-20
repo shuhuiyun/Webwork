@@ -1,0 +1,16 @@
+:root {
+  --bs-font-sans-serif: system-ui, -apple-system, 微軟正黑體, Microsoft JhengHei,
+    "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+.bg__size {
+  background-position: center center;
+  background-size: cover;
+}
+.text__shadow {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.h-1000vv {
+  height: 555px;
+}
