@@ -1,14 +1,16 @@
+@use "../layout/card" as *;
+
 //Boostrap Color
 $primary: #934ba1;
 $secondary: #71ddff;
-//$success: #00ff89;
+$body-color: #fff;
 
 //Boostrap 隱藏開啟
 //margin可以用負值
 $enable-negative-margins: ture;
 
-//card-border粗細
-$card-border-width: 5px;
+//card角角有空隙
+//$card-inner-border-radius: 0px;
 
 //position 增加auto
 $position-values: (

@@ -9,3 +9,7 @@
 .text__shadow {
   text-shadow: black 0.1em 0.1em 0.3em;
 }
+.card-img-hidden {
+  border: 5px solid var(--bs-border-color) !important;
+  background-color: #dee2e6 !important;
+}
