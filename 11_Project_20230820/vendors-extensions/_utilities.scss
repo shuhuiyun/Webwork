@@ -1,0 +1,10 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-attachment": (
+      property: background-attachment,
+      class: "bg-attachment",
+      values: fixed,
+    ),
+  )
+);

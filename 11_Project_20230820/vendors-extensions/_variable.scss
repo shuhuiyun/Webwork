@@ -1,0 +1,27 @@
+//Boostrap Color
+$primary: #934ba1;
+$secondary: #71ddff;
+$body-color: #fff;
+
+//Boostrap 隱藏開啟
+//margin可以用負值
+$enable-negative-margins: ture;
+
+//card角角有空隙
+//$card-inner-border-radius: 0px;
+
+//position 增加auto
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  auto: auto,
+);
+
+//警告顏色修改
+$form-feedback-valid-color: #00ff89;
+$form-feedback-invalid-color: #f68d2e;
+
+//form文字顏色
+$input-color: black;
+$input-placeholder-color: #6c757d;
