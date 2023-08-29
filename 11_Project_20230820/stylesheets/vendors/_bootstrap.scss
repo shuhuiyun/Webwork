@@ -6,17 +6,7 @@
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../stylesheets/utils/utilities";
-@import "../vendors-extensions/utilities";
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "background-attachment": (
-//       property: background-attachment,
-//       class: "bg-attachment",
-//       values: fixed,
-//     ),
-//   )
-// );
+@import "./../vendors-extensions/utilities";
 
 // Layout & components
 @import "../../node_modules/bootstrap/scss/root";
