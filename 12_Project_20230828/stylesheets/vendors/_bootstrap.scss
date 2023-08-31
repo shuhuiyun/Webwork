@@ -1,4 +1,4 @@
-@use "../base/variable" as *;
+@import "../vendors-extensions/variable";
 // Configuration
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";

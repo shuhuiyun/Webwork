@@ -31,10 +31,16 @@
             </div>
           </a>
           <div class="collapse" id="menu-order">
-            <a href="#" class="sidebar-link">
-              <div class="px-5">其他元件</div>
+            <a href="./orders.html" class="sidebar-link">
+              <div class="px-5">訂單列表</div>
+            </a>
+            <a href="./order.html" class="sidebar-link">
+              <div class="px-5">單一訂單細節</div>
             </a>
           </div>
+          <a href="#" class="sidebar-link">
+            <div class="px-4">參考連結</div>
+          </a>
         </div>
         <!-- 3.登出按鈕 -->
         <a href="#" class="mt-auto sidebar-link">
@@ -51,9 +57,9 @@
             <i class="bi bi-arrows-angle-expand"></i>
           </a>
         </div>
-        <div class="p-4">
+        <div class="container p-4">
           <!-- 主要內容 -->
-          <div class="row row-cols-lg-3 g-3">
+          <div class="row row-cols-lg-3 g-3 mb-3">
             <div class="col">
               <div class="card shadow-sm">
                 <div class="card-body text-end">
@@ -79,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-2 g-3">
+          <div class="row g-3 mb-3">
             <div class="col-lg-4">
               <div class="card shadow-sm h-100">
                 <div class="card-body">
@@ -93,6 +99,123 @@
                   <canvas id="bar-chart" class="img-fluid"></canvas>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div class="card-header bg-white">
+              <div class="input-group">
+                <span class="input-group-text border-0 bg-white pe-0"
+                  ><i class="bi bi-search"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-hover mb-0">
+                  <thead
+                    class="table-light text-nowrap"
+                    style="border-bottom: 2px solid gray"
+                  >
+                    <tr class="align-middle">
+                      <th scope="col" class="py-3 ps-4">訂單編號</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">用戶姓名</th>
+                      <th scope="col">購買品項</th>
+                      <th scope="col">付款狀態</th>
+                      <th scope="col">購買金額</th>
+                      <th scope="col">編輯</th>
+                    </tr>
+                  </thead>
+                  <tbody class="thbody text-nowrap">
+                    <tr class="align-middle">
+                      <td class="ps-4">1001</td>
+                      <td>customer1@example.com</td>
+                      <td>張三</td>
+                      <td>商品A</td>
+                      <td>已付款</td>
+                      <td>$1000</td>
+                      <td class="pe-4">
+                        <a href="#" class="btn btn-sm btn-outline-secondary"
+                          >編輯<i class="bi bi-pen ms-2"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="align-middle">
+                      <td class="ps-4">1002</td>
+                      <td>customer2@example.com</td>
+                      <td>李四</td>
+                      <td>商品B</td>
+                      <td>已付款</td>
+                      <td>$1500</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"
+                          >編輯<i class="bi bi-pen ms-2"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="align-middle">
+                      <td class="ps-4">1003</td>
+                      <td>customer3@example.com</td>
+                      <td>王五</td>
+                      <td>商品C</td>
+                      <td class="text-danger">待付款</td>
+                      <td>$2000</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"
+                          >編輯<i class="bi bi-pen ms-2"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="align-middle">
+                      <td class="ps-4">1004</td>
+                      <td>customer4@example.com</td>
+                      <td>陳六</td>
+                      <td>商品A</td>
+                      <td>已付款</td>
+                      <td>$1000</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"
+                          >編輯<i class="bi bi-pen ms-2"></i
+                        ></a>
+                      </td>
+                    </tr>
+                    <tr class="align-middle">
+                      <td class="ps-4">1005</td>
+                      <td>customer5@example.com</td>
+                      <td>林七</td>
+                      <td>商品B</td>
+                      <td class="text-danger">待付款</td>
+                      <td>$1500</td>
+                      <td>
+                        <a href="#" class="btn btn-sm btn-outline-secondary"
+                          >編輯<i class="bi bi-pen ms-2"></i
+                        ></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer bg-white py-3">
+              <nav aria-label="Page navigation example ">
+                <ul class="pagination mb-0 justify-content-end">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
