@@ -1,0 +1,23 @@
+// bootstrap色彩自訂
+$primary: #7fb22d;
+$secondary: #c17d41;
+$light: #f4f4f4;
+$dark: #333;
+
+//btn color
+$btn-hover-color: #fff;
+
+
+//修改按鈕圓角
+$border-radius-pill: 3rem;
+$btn-border-radius: $border-radius-pill;
+$btn-border-radius-sm: $border-radius-pill;
+$btn-border-radius-lg: $border-radius-pill;
+
+//navbar text color
+$navbar-light-color: $dark;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+//offcanvas
+$offcanvas-horizontal-width: 300px;

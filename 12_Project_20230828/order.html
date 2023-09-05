@@ -16,32 +16,44 @@
         <!-- 1.後台名稱 -->
         <div class="px-4"><strong>六角西餐廳</strong> - 後台管理</div>
         <!-- 2.選單 -->
-        <div class="overflow-auto mt-3">
-          <a href="./home.html" class="sidebar-link active">
-            <div class="px-4">首頁</div>
-          </a>
-          <a href="#" class="sidebar-link">
-            <div
-              class="px-4 d-flex"
-              data-bs-toggle="collapse"
-              href="#menu-order"
-              role="button"
-            >
-              訂單管理<i class="bi bi-caret-down ms-auto"></i>
-            </div>
-          </a>
-          <div class="collapse" id="menu-order">
-            <a href="./orders.html" class="sidebar-link">
-              <div class="px-5">訂單列表</div>
-            </a>
-            <a href="#" class="sidebar-link">
-              <div class="px-5">單一訂單細節</div>
-            </a>
-          </div>
-          <a href="#" class="sidebar-link">
-            <div class="px-4">參考連結</div>
-          </a>
-        </div>
+        <nav class="overflow-auto mt-3">
+          <ul class="list-unstyled">
+            <li>
+              <a href="./home.html" class="sidebar-link">
+                <div class="px-4">首頁</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link">
+                <div
+                  class="px-4 d-flex"
+                  data-bs-toggle="collapse"
+                  href="#menu-order"
+                  role="button"
+                >
+                  訂單管理<i class="bi bi-caret-down ms-auto"></i>
+                </div>
+              </a>
+            </li>
+            <ul class="collapse show list-unstyled" id="menu-order">
+              <li>
+                <a href="./orders.html" class="sidebar-link">
+                  <div class="px-5">訂單列表</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link active">
+                  <div class="px-5">單一訂單細節</div>
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="#" class="sidebar-link">
+                <div class="px-4">參考連結</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- 3.登出按鈕 -->
         <a href="#" class="mt-auto sidebar-link">
           <div class="px-4">登出</div>
@@ -98,7 +110,7 @@
               tabindex="0"
             >
               <div class="card mb-3 shadow-sm" id="card-summary">
-                <div class="card-header">摘要</div>
+                <h2 class="card-header">摘要</h2>
                 <div class="card-body">
                   <div class="row mb-0">
                     <dt class="col-sm-3 text-truncate">訂單編號</dt>
@@ -114,7 +126,7 @@
               </div>
 
               <div class="card mb-3 shadow-sm" id="card-detail">
-                <div class="card-header">訂單管理</div>
+                <h2 class="card-header">訂單管理</h2>
                 <div class="card-body p-0">
                   <div class="table-responsive">
                     <table class="table table-hover mb-0">
@@ -178,7 +190,7 @@
                         </tr>
                         <tr class="align-middle">
                           <td class="ps-4"><input type="checkbox" /></td>
-                          <td>1001</td>
+                          <td>1002</td>
                           <td>customer1@example.com</td>
                           <td>張三</td>
                           <td>商品A</td>
@@ -205,7 +217,14 @@
                                   <a class="dropdown-item" href="#">新增訂單</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">刪除訂單</a>
+                                  <a
+                                    class="dropdown-item text-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    href="#"
+                                    data-bs-order-id="1002"
+                                    >刪除訂單</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -213,7 +232,7 @@
                         </tr>
                         <tr class="align-middle">
                           <td class="ps-4"><input type="checkbox" /></td>
-                          <td>1001</td>
+                          <td>1003</td>
                           <td>customer1@example.com</td>
                           <td>張三</td>
                           <td>商品A</td>
@@ -240,7 +259,14 @@
                                   <a class="dropdown-item" href="#">新增訂單</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">刪除訂單</a>
+                                  <a
+                                    class="dropdown-item text-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    href="#"
+                                    data-bs-order-id="1003"
+                                    >刪除訂單</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -248,7 +274,7 @@
                         </tr>
                         <tr class="align-middle">
                           <td class="ps-4"><input type="checkbox" /></td>
-                          <td>1001</td>
+                          <td>1004</td>
                           <td>customer1@example.com</td>
                           <td>張三</td>
                           <td>商品A</td>
@@ -275,7 +301,14 @@
                                   <a class="dropdown-item" href="#">新增訂單</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">刪除訂單</a>
+                                  <a
+                                    class="dropdown-item text-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    href="#"
+                                    data-bs-order-id="1004"
+                                    >刪除訂單</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -283,7 +316,7 @@
                         </tr>
                         <tr class="align-middle">
                           <td class="ps-4"><input type="checkbox" /></td>
-                          <td>1001</td>
+                          <td>1005</td>
                           <td>customer1@example.com</td>
                           <td>張三</td>
                           <td>商品A</td>
@@ -310,7 +343,14 @@
                                   <a class="dropdown-item" href="#">新增訂單</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">刪除訂單</a>
+                                  <a
+                                    class="dropdown-item text-danger"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal"
+                                    href="#"
+                                    data-bs-order-id="1005"
+                                    >刪除訂單</a
+                                  >
                                 </li>
                               </ul>
                             </div>
@@ -392,7 +432,7 @@
               </div>
 
               <div class="card mb-3 shadow-sm" id="card-invoice">
-                <div class="card-header">發票管理</div>
+                <h2 class="card-header">發票管理</h2>
                 <div class="card-body">
                   <form class="row mb-0 d-flex">
                     <label for="invoice" class="col-sm-3 col-form-label"
@@ -429,7 +469,7 @@
               </div>
 
               <div class="card mb-3 shadow-sm" id="card-danger">
-                <div class="card-header">危險動作</div>
+                <h2 class="card-header">危險動作</h2>
                 <div class="card-body">
                   <div class="row align-items-center">
                     <div class="col-4 col-lg-2 mb-2">
@@ -440,7 +480,7 @@
                         退款
                       </button>
                     </div>
-                    <div class="col">退還用戶款項</div>
+                    <p class="col">退還用戶款項</p>
                   </div>
                   <div class="row align-items-center">
                     <div class="col-4 col-lg-2 mb-2">
@@ -451,18 +491,18 @@
                         折讓
                       </button>
                     </div>
-                    <div class="col">針對已開立的訂單退回部分款項</div>
+                    <p class="col">針對已開立的訂單退回部分款項</p>
                   </div>
                   <div class="row align-items-center">
                     <div class="col-4 col-lg-2 mb-2">
                       <button
                         type="button"
-                        class="btn btn-outline-danger w-100 text-nowrap"
+                        class="btn btn-outline-danger w-100"
                       >
                         刪除訂單
                       </button>
                     </div>
-                    <div class="col">將訂單刪除，並移除相關訂單資訊</div>
+                    <p class="col">將訂單刪除，並移除相關訂單資訊</p>
                   </div>
                 </div>
               </div>

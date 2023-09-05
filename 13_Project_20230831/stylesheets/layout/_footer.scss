@@ -1,0 +1,11 @@
+.footer-nav__bgcolor {
+  background: #7fb22d;
+  border-bottom: #f4f4f4 1px solid;
+}
+
+.nav__line::before {
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  margin-right: 16px;
+}

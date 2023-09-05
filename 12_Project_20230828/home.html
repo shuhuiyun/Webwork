@@ -16,32 +16,44 @@
         <!-- 1.後台名稱 -->
         <div class="px-4"><strong>六角西餐廳</strong> - 後台管理</div>
         <!-- 2.選單 -->
-        <div class="overflow-auto mt-3">
-          <a href="#" class="sidebar-link active">
-            <div class="px-4">首頁</div>
-          </a>
-          <a href="#" class="sidebar-link">
-            <div
-              class="px-4 d-flex"
-              data-bs-toggle="collapse"
-              href="#menu-order"
-              role="button"
-            >
-              訂單管理<i class="bi bi-caret-down ms-auto"></i>
-            </div>
-          </a>
-          <div class="collapse" id="menu-order">
-            <a href="./orders.html" class="sidebar-link">
-              <div class="px-5">訂單列表</div>
-            </a>
-            <a href="./order.html" class="sidebar-link">
-              <div class="px-5">單一訂單細節</div>
-            </a>
-          </div>
-          <a href="#" class="sidebar-link">
-            <div class="px-4">參考連結</div>
-          </a>
-        </div>
+        <nav class="overflow-auto mt-3">
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="sidebar-link active">
+                <div class="px-4">首頁</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="sidebar-link">
+                <div
+                  class="px-4 d-flex"
+                  data-bs-toggle="collapse"
+                  href="#menu-order"
+                  role="button"
+                >
+                  訂單管理<i class="bi bi-caret-down ms-auto"></i>
+                </div>
+              </a>
+            </li>
+            <ul class="collapse list-unstyled" id="menu-order">
+              <li>
+                <a href="./orders.html" class="sidebar-link">
+                  <div class="px-5">訂單列表</div>
+                </a>
+              </li>
+              <li>
+                <a href="./order.html" class="sidebar-link">
+                  <div class="px-5">單一訂單細節</div>
+                </a>
+              </li>
+            </ul>
+            <li>
+              <a href="#" class="sidebar-link">
+                <div class="px-4">參考連結</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
         <!-- 3.登出按鈕 -->
         <a href="#" class="mt-auto sidebar-link">
           <div class="px-4">登出</div>
@@ -227,93 +239,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      (() => {
-        const chartColors = {
-          red: "rgb(255, 99, 132)",
-          orange: "rgb(255, 159, 64)",
-          yellow: "rgb(255, 205, 86)",
-          green: "rgb(75, 192, 192)",
-          blue: "rgb(54, 162, 235)",
-          purple: "rgb(153, 102, 255)",
-          grey: "rgb(201, 203, 207)",
-        };
-        var randomScalingFactor = function () {
-          return Math.round(Math.random() * 2000000);
-        };
-
-        const pieCtx = document.getElementById("pie-chart").getContext("2d");
-        const barCtx = document.getElementById("bar-chart").getContext("2d");
-
-        const config = {
-          type: "pie",
-          data: {
-            datasets: [
-              {
-                data: [
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                ],
-                backgroundColor: [
-                  chartColors.red,
-                  chartColors.orange,
-                  chartColors.yellow,
-                  chartColors.green,
-                  chartColors.blue,
-                ],
-                label: "Dataset 1",
-              },
-            ],
-            labels: [
-              "大麥克全餐",
-              "肥宅快樂水",
-              "太爽啦義大利麵",
-              "薯條加大吃不完",
-              "兒童餐椅不給坐",
-            ],
-          },
-          options: {
-            responsive: true,
-          },
-        };
-        const barConfig = {
-          type: "bar",
-          data: {
-            datasets: [
-              {
-                data: [
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                  randomScalingFactor(),
-                ],
-                backgroundColor: [
-                  chartColors.red,
-                  chartColors.orange,
-                  chartColors.yellow,
-                  chartColors.green,
-                  chartColors.blue,
-                  chartColors.purple,
-                ],
-                label: "Dataset 1",
-              },
-            ],
-            labels: ["一月", "二月", "三月", "四月", "五月", "六月"],
-          },
-          options: {
-            responsive: true,
-          },
-        };
-        const pieChart = new Chart(pieCtx, config);
-        const barChart = new Chart(barCtx, barConfig);
-      })();
-    </script>
     <script src="./javascripts/all.js"></script>
   </body>
 </html>

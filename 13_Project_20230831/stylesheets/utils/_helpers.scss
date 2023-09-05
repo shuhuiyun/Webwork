@@ -1,0 +1,12 @@
+$logo-img: url("../../img/logo.png");
+$logo-width: 265px;
+.hide__logo {
+  width: $logo-width;
+  background-image: $logo-img;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-indent: 101%; /*首行縮排到超過100%*/
+  overflow: hidden; /*超過div的範圍就隱藏*/
+  white-space: nowrap; /*不斷行*/
+}
