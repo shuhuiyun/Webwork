@@ -6,6 +6,16 @@ toggleMenuBtn.addEventListener("click", (evt) => {
   body.classList.toggle("sidebar__toggled");
 });
 
+//Modal
+const modalByDelete = document.querySelector("#deleteModal");
+modalByDelete.addEventListener("show.bs.modal", function (event) {
+  const button = event.relatedTarget;
+  const orderId = button.dataset.bsOrderId;
+  console.log(orderId);
+  const modalText = modalByDelete.querySelector("#deleteText");
+  modalText.textContent = orderId;
+});
+
 //動態圖表
 (() => {
   const chartColors = {
@@ -92,13 +102,3 @@ toggleMenuBtn.addEventListener("click", (evt) => {
   const pieChart = new Chart(pieCtx, config);
   const barChart = new Chart(barCtx, barConfig);
 })();
-
-//Modal
-const modalByDelete = document.querySelector("#deleteModal");
-modalByDelete.addEventListener("show.bs.modal", function (event) {
-  const button = event.relatedTarget;
-  const orderId = button.dataset.bsOrderId;
-  console.log(orderId);
-  const modalText = modalByDelete.querySelector("#deleteText");
-  modalText.textContent = orderId;
-});
