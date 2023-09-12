@@ -3,10 +3,8 @@ $primary: #7fb22d;
 $secondary: #c17d41;
 $light: #f4f4f4;
 $dark: #333;
-
 //btn color
 $btn-hover-color: #fff;
-
 
 //修改按鈕圓角
 $border-radius-pill: 3rem;
@@ -21,3 +19,13 @@ $navbar-light-active-color: $primary;
 
 //offcanvas
 $offcanvas-horizontal-width: 300px;
+
+//修改card圓角
+$card-border-radius: 2rem;
+
+//增加文字大小3rem
+$font-sizes: (
+  7: 3rem,
+);
+
+//新增灰色文字

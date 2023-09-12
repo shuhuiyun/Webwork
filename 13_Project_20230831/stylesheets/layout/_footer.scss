@@ -1,11 +1,51 @@
+@use "../layout/grid" as *;
 .footer-nav__bgcolor {
   background: #7fb22d;
-  border-bottom: #f4f4f4 1px solid;
+  position: relative;
+}
+.footer__line {
+  display: block;
+  position: absolute;
+  width: 99vw;
+  height: 1px;
+  top: 40px;
+  left: 50%;
+  background: #ffff;
+  transform: translate(-50%, -50%);
 }
 
-.nav__line::before {
-  position: absolute;
-  width: 1px;
-  height: 16px;
-  margin-right: 16px;
+.nav__active {
+  display: block;
+}
+@include grid-sm {
+  .nav__active {
+    display: none;
+  }
+}
+
+//資訊
+.footer__icon {
+  color: #7fb22d;
+  font-size: 24px;
+}
+.footer__btn {
+  border: none;
+  border-radius: 50%;
+}
+
+.footer__text {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    li {
+      display: block;
+    }
+  }
+}
+@include grid-md {
+  .footer__text {
+    flex-direction: column;
+    align-items: center;
+  }
 }
