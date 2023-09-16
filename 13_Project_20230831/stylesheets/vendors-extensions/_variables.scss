@@ -28,4 +28,8 @@ $font-sizes: (
   7: 3rem,
 );
 
-//新增灰色文字
+//accordion
+$accordion-button-bg: rgba(127, 178, 45, 0.1);
+$accordion-button-active-bg: rgba(127, 178, 45, 0.1);
+$accordion-border-width: 2px;
+$accordion-border-color: rgba(127, 178, 45, 0.35);

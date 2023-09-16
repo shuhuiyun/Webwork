@@ -1,4 +1,5 @@
 @use "../layout/grid" as *;
+
 $span-center-top: 50%;
 .hamburger {
   z-index: 999;
@@ -54,6 +55,13 @@ $span-center-top: 50%;
   --bs-btn-active-color: #ffffff !important;
 }
 
+.btn-light {
+  --bs-btn-hover-color: #ffffff !important;
+  --bs-btn-active-color: #ffffff !important;
+  --bs-btn-hover-bg: #7fb22d !important;
+  --bs-btn-active-bg: #7fb22d !important;
+}
+
 //footer nav button
 
 .nav__link {
@@ -68,4 +76,11 @@ $span-center-top: 50%;
   display: block;
   width: 2px;
   height: 16px;
+}
+
+//form btn
+.form__btn2 {
+  border-radius: 0px !important;
+  height: 6.5rem;
+  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
 }

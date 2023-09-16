@@ -14,35 +14,47 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>小盆友 | 盆栽出租</title>
+    <title>相關問題 | 小盆友</title>
   </head>
   <body>
-    <header>
-      <!-- 選單 -->
+    <!-- 選單 -->
+    <div class="sticky-top">
       <nav
-        class="bg-light navbar navbar-expand-lg py-2 px-2 px-lg-5 nav__shadow sticky-top"
+        class="bg-light navbar navbar-expand-lg py-2 px-2 px-lg-5 nav__shadow"
       >
         <div class="container">
-          <h1 class="mb-0 navbar-brand hide__logo"><a href="#">小盆友</a></h1>
+          <a href="./index.html#">
+            <h1 class="mb-0 navbar-brand hide__logo">小盆友</h1>
+          </a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="#" class="mx-2 nav-link fw-semibold active"
+                <a href="./index.html#about" class="mx-2 nav-link fw-semibold"
                   >關於我們</a
                 >
               </li>
               <li>
-                <a href="#" class="mx-2 nav-link fw-semibold">園藝設計</a>
+                <a href="./index.html#design" class="mx-2 nav-link fw-semibold"
+                  >園藝設計</a
+                >
               </li>
               <li>
-                <a href="#" class="mx-2 nav-link fw-semibold">盆栽出租</a>
+                <a href="./index.html#sell" class="mx-2 nav-link fw-semibold"
+                  >盆栽出租</a
+                >
               </li>
               <li>
-                <a href="#" class="mx-2 nav-link fw-semibold">常見問題</a>
+                <a
+                  href="./question.html"
+                  class="mx-2 nav-link fw-semibold active"
+                  >常見問題</a
+                >
               </li>
-              <button type="button" class="ms-2 btn btn-outline-primary">
-                方案購買
-              </button>
+              <a href="#">
+                <button type="button" class="ms-2 btn btn-outline-primary">
+                  方案購買
+                </button>
+              </a>
             </ul>
           </div>
 
@@ -50,7 +62,7 @@
           <div
             class="btn btn-none border-0 ms-auto p-2 hamburger hide"
             data-bs-toggle="offcanvas"
-            href="#offcanvasExample"
+            href="./index.html#offcanvasExample"
             role="button"
             aria-controls="offcanvasExample"
           >
@@ -60,7 +72,8 @@
           </div>
         </div>
       </nav>
-
+    </div>
+    <header>
       <!-- hamburger-menu -->
       <div
         class="offcanvas offcanvas-start bg-light"
@@ -80,23 +93,30 @@
           <ul class="list-unstyled">
             <li class="mb-3 text-center">
               <a
-                href="#"
+                href="./index.html#about"
                 class="link-primary text-decoration-none fs-5 fw-semibold"
                 >關於我們</a
               >
             </li>
             <li class="mb-3 text-center">
               <a
-                href="#"
+                href="./index.html#design"
                 class="link-primary text-decoration-none fs-5 fw-semibold"
                 >園藝設計</a
               >
             </li>
             <li class="mb-3 text-center">
               <a
-                href="#"
+                href="./index.html#sell"
                 class="link-primary text-decoration-none fs-5 fw-semibold"
                 >盆栽出租</a
+              >
+            </li>
+            <li class="mb-3 text-center">
+              <a
+                href="./question.html"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >常見問題</a
               >
             </li>
             <li class="mb-3 text-center">
@@ -108,20 +128,6 @@
             </li>
           </ul>
         </div>
-      </div>
-
-      <!-- Banner -->
-      <div class="col-12 banner text-center">
-        <p>
-          <span
-            ><span class="hide-text">拒絕無趣辦公室，</span>來點盆栽吧！</span
-          >
-          <br />
-          <span class="hide-text">療癒加分，讓工作變成綠意滿滿的好心情。 </span>
-        </p>
-        <button type="button" class="btn btn-primary mt-lg-4 px-5">
-          立即選購
-        </button>
       </div>
     </header>
 
@@ -137,30 +143,408 @@
         如果您有什麼問題或需要幫忙，別客氣，我們會盡快回覆您的。<br />
         請記住，假日期間的回覆可能會稍有延遲，不過我們會在下一個工作日為您解答。
       </p>
+      <form action="">
+        <!-- 選擇方案： -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <p class="h6 fw-bold mb-0">
+              選擇方案 <span class="text-danger">*</span>
+            </p>
+          </div>
+          <div class="col-md-9">
+            <div class="row g-2 g-md-4">
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options-base"
+                  id="large-plants"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
+                  for="large-plants"
+                  ><p class="mb-0 form__btn-text">
+                    大型盆栽 <br />NT <span class="fw-bold">300</span>/月
+                  </p></label
+                >
+              </div>
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options-base"
+                  id="small-plants"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
+                  for="small-plants"
+                  ><p class="mb-0 form__btn-text">
+                    小型盆栽 <br />NT <span class="fw-bold">45</span>/月
+                  </p></label
+                >
+              </div>
+              <div class="col">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options-base"
+                  id="custom-olants"
+                  autocomplete="off"
+                  checked
+                />
+                <label
+                  class="btn btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
+                  for="custom-olants"
+                  ><p class="mb-0 form__btn-text">
+                    客製化造景 <br />NT <span class="fw-bold">650</span>/月
+                  </p></label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="row">
-        <div class="col">
-          <p class="h1">選擇方案 <span class="text-danger">*</span></p>
+        <!-- 加購方案 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <p class="h6 fw-bold mb-0">加購服務</p>
+          </div>
+          <div class="col-md-9">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="add-services-01"
+                value="option1"
+              />
+              <label class="form-check-label" for="add-services-01"
+                >自動澆水系統</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="add-services-02"
+                value="option2"
+              />
+              <label class="form-check-label" for="add-services-02"
+                >定期保養</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="add-services-03"
+                value="option3"
+              />
+              <label class="form-check-label" for="add-services-03"
+                >特別場合布置</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="add-services-04"
+                value="option4"
+              />
+              <label class="form-check-label" for="add-services-04"
+                >租賃陳列架</label
+              >
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <div></div>
+
+        <!-- 姓名 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="name" class="form-label">
+              <p class="h6 fw-bold mb-0">
+                姓名 <span class="text-danger">*</span>
+              </p></label
+            >
+          </div>
+          <div class="col-lg-3 col-md-5 col-7">
+            <input type="text" class="form-control" id="name" />
+          </div>
         </div>
-      </div>
+
+        <!-- 郵遞區號 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="postal" class="form-label">
+              <p class="h6 fw-bold mb-0">郵遞區號</p></label
+            >
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col">
+                <div class="row d-flex align-items-center flex-wrap-nowrap">
+                  <div class="col-3 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        maxlength="3"
+                        id="postal"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-auto py-2 px-0">
+                    <p class="d-inline mb-0">-</p>
+                  </div>
+                  <div class="col-3 col-md-2 col-lg-2">
+                    <div>
+                      <input
+                        type="text"
+                        maxlength="3"
+                        id="postal2"
+                        class="form-control"
+                        aria-describedby="postalHelpInline"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="ps-auto ps-md-0 col-md-3 d-flex align-items-center flex-grow-1"
+                  >
+                    <span class="mb-0 form-text" id="postalHelpInline">
+                      請輸入臺灣郵遞區號3+3碼
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                <a
+                  href="https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=208"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-sm btn-outline-primary border-2 fw-bold form_postalbtn"
+                    aria-describedby="postalHelpInline2"
+                    type="button"
+                  >
+                    郵遞區號查詢
+                  </button></a
+                >
+
+                <span id="postalHelpInline2" class="form-text">
+                  此為外部網站連結，供您查詢使用。
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 住所 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="address" class="form-label">
+              <p class="h6 fw-bold mb-0">
+                住所 <span class="text-danger">*</span>
+              </p></label
+            >
+          </div>
+          <div class="col">
+            <div class="col-5 col-md-3">
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+                id="address"
+              >
+                <option>請選擇縣市</option>
+                <option value="基隆市">基隆市</option>
+                <option value="臺北市">臺北市</option>
+                <option value="新北市">新北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="臺中市">臺中市</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="嘉義市">嘉義市</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="臺南市">臺南市</option>
+                <option value="高雄市">高雄市</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="臺東縣">臺東縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address2"
+                  aria-describedby="addressHelpInline"
+                />
+              </div>
+              <div class="col">
+                <div class="col ps-0 d-flex align-items-center">
+                  <span id="addressHelpInline" class="form-text">
+                    請您提供正確的地址，這樣我們才能更好地為您提供服務。謝謝您的合作！
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address3"
+                  aria-describedby="communityHelpInline"
+                />
+              </div>
+              <div class="col">
+                <div class="col ps-0 d-flex align-items-center">
+                  <span id="communityHelpInline" class="form-text">
+                    ( 辦公大樓、社區名稱 )
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 電話 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="tel" class="form-label">
+              <p class="h6 fw-bold mb-0">電話</p></label
+            >
+          </div>
+          <div class="col">
+            <div class="row d-flex align-items-center flex-wrap-nowrap">
+              <div class="col-3 col-md-2 col-lg-2">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    maxlength="2"
+                    id="tel"
+                  />
+                </div>
+              </div>
+              <div class="col-auto py-2 px-0">
+                <p class="d-inline mb-0">-</p>
+              </div>
+              <div class="col-8 col-md-6 col-lg-4">
+                <div>
+                  <input
+                    type="text"
+                    maxlength="8"
+                    id="tel2"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 電子郵件 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="mail" class="form-label">
+              <p class="h6 fw-bold mb-0">
+                電子郵件 <span class="text-danger">*</span>
+              </p></label
+            >
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12 mb-3">
+                <input type="text" class="form-control" id="mail" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="mail2"
+                  aria-describedby="mailHelpInline"
+                />
+              </div>
+              <div class="col">
+                <div class="col ps-0 d-flex align-items-center">
+                  <span id="mailHelpInline" class="form-text">
+                    請輸入兩次以進行確認。
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 諮詢內容 -->
+        <div class="row form__line py-4">
+          <div class="col-md-3 d-flex align-items-center">
+            <label for="Textarea" class="form-label">
+              <p class="h6 fw-bold mb-0">
+                諮詢內容 <span class="text-danger">*</span>
+              </p></label
+            >
+          </div>
+          <div class="col">
+            <div class="row">
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  style="resize: none; height: 20rem"
+                  id="Textarea"
+                  rows="3"
+                  aria-activedescendant="textarealHelpInline"
+                ></textarea>
+              </div>
+              <div class="col d-flex align-items-center">
+                <span id="textarealHelpInline" class="form-text">
+                  如果您有關於訂單的問題，請一定告訴我們您的訂單編號。非常感謝您的合作！
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 表單按鈕 -->
+        <div class="row">
+          <div class="col-12 py-4 d-flex justify-content-center">
+            <button type="submit" class="btn btn-secondary col-md-2 col-5">
+              確認送出
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
 
     <!-- footer -->
     <footer class="bg-primary">
+      <div class="footer__line"></div>
       <!-- nav -->
       <div
         class="footer-nav__bgcolor mb-0 py-2 px-2 px-lg-5 container"
         style="min-height: 34px"
       >
-        <div class="footer__line"></div>
         <div class="nav__active">
           <ul class="mb-0 list-unstyled d-flex justify-content-end">
             <li class="d-flex align-items-center">
               <a
-                href="#"
+                href="./index.html#about"
                 class="text-decoration-none fw-semibold ms-3 nav__link"
                 >關於我們</a
               >
@@ -168,7 +552,7 @@
             </li>
             <li class="d-flex align-items-center">
               <a
-                href="#"
+                href="./index.html#design"
                 class="text-decoration-none fw-semibold ms-3 nav__link"
                 >園藝設計</a
               >
@@ -176,7 +560,7 @@
             </li>
             <li class="d-flex align-items-center">
               <a
-                href="#"
+                href="./index.html#sell"
                 class="text-decoration-none fw-semibold ms-3 nav__link"
                 >盆栽出租</a
               >
@@ -184,7 +568,7 @@
             </li>
             <li class="d-flex align-items-center">
               <a
-                href="#"
+                href="./question.html"
                 class="text-decoration-none fw-semibold ms-3 nav__link"
                 >常見問題</a
               >

@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>小盆友 | 盆栽出租</title>
+  </head>
+  <body>
+    <!-- 選單 -->
+    <div class="sticky-top">
+      <nav
+        class="bg-light navbar navbar-expand-lg py-2 px-2 px-lg-5 nav__shadow"
+      >
+        <div class="container">
+          <a href="./index.html#">
+            <h1 class="mb-0 navbar-brand hide__logo">小盆友</h1>
+          </a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="./index.html#about" class="mx-2 nav-link fw-semibold"
+                  >關於我們</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#design" class="mx-2 nav-link fw-semibold"
+                  >園藝設計</a
+                >
+              </li>
+              <li>
+                <a href="./index.html#sell" class="mx-2 nav-link fw-semibold"
+                  >盆栽出租</a
+                >
+              </li>
+              <li>
+                <a href="#" class="mx-2 nav-link fw-semibold active"
+                  >常見問題</a
+                >
+              </li>
+              <a href="./form.html">
+                <button type="button" class="ms-2 btn btn-outline-primary">
+                  方案購買
+                </button>
+              </a>
+            </ul>
+          </div>
+
+          <!-- hamburger-button -->
+          <div
+            class="btn btn-none border-0 ms-auto p-2 hamburger hide"
+            data-bs-toggle="offcanvas"
+            href="./index.html#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header>
+      <!-- hamburger-menu -->
+      <div
+        class="offcanvas offcanvas-start bg-light"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header px-4">
+          <button
+            type="button"
+            class="btn-close ms-auto shadow-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled">
+            <li class="mb-3 text-center">
+              <a
+                href="./index.html#about"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >關於我們</a
+              >
+            </li>
+            <li class="mb-3 text-center">
+              <a
+                href="./index.html#design"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >園藝設計</a
+              >
+            </li>
+            <li class="mb-3 text-center">
+              <a
+                href="./index.html#sell"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >盆栽出租</a
+              >
+            </li>
+            <li class="mb-3 text-center">
+              <a
+                href="#"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >常見問題</a
+              >
+            </li>
+            <li class="mb-3 text-center">
+              <a
+                href="./form.html"
+                class="link-primary text-decoration-none fs-5 fw-semibold"
+                >方案購買</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 主要內容 -->
+    <div class="container my-5">
+      <h2 class="h3 fw-bold text-center">常見問題</h2>
+      <div
+        class="bg-primary d-block mx-auto rounded-pill mb-5"
+        style="width: 2.7rem; height: 4px"
+      ></div>
+      <p class="lh-lg">
+        我們理解您可能有許多疑問，<br />
+        所以我們在這裡提供了一些常見問題和解答，幫助您更好地了解我們的服務和如何使用它們。<br />
+        如果您找不到您的問題的答案，請隨時與我們聯繫，我們樂意為您提供協助。<br />
+      </p>
+
+      <!-- 大型盆栽 -->
+      <div class="div my-5">
+        <h3 class="fw-bold h4 mb-4">
+          <img
+            src="./img/leaf-icon 1.png"
+            alt="leaf-icon"
+            class="me-2"
+            style="width: 34px; height: 30px"
+          />關於大型盆栽的問題
+        </h3>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />什麼是大型盆栽，它們在我的工作環境中有什麼好處？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      大型盆栽是高度和體積較大的盆栽植物，它們可以提供引人注目的綠化效果，改善空氣質量，並增加室內空間的美感。
+                      <table class="table mt-3 w-auto">
+                        <thead class="table-light">
+                          <tr>
+                            <th scope="col">好處</th>
+                            <th scope="col">描述</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">視覺效果</th>
+                            <td>提供引人注目的綠化效果。</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">改善空氣質量</th>
+                            <td>有助於提高室內空氣質量。</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">增加美感</th>
+                            <td>增添室內空間的美感和生機。</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">營造舒適感</th>
+                            <td colspan="2">改善工作環境，提高員工幸福感。</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />我應該如何選擇適合我的工作環境的大型盆栽？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      您可以考慮工作空間的大小、照明情況和風格喜好，然後諮詢我們的園藝師，他們可以提供專業建議。
+                      <ul class="mt-3">
+                        <li>大型盆栽需要定期澆水、修剪和養分補充。</li>
+                        <li>
+                          定期檢查土壤濕度和健康狀況是保持它們茁壯成長的關鍵。
+                        </li>
+                        <li>我們提供定期的照顧服務，以確保它們保持健康。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />大型盆栽需要特別的照顧嗎？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      是的，大型盆栽需要定期澆水、修剪和養分補充。我們提供定期的照顧服務，以確保它們保持健康。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />我可以租用大型盆栽多長時間？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      您可以根據自己的需求選擇租賃期限，我們提供靈活的租賃選項，從短期到長期都有。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 小型盆栽 -->
+      <div class="div my-5">
+        <h3 class="fw-bold h4 mb-4">
+          <img
+            src="./img/leaf-icon 1.png"
+            alt="leaf-icon"
+            class="me-2"
+            style="width: 34px; height: 30px"
+          />關於小型盆栽的問題
+        </h3>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse5"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse5"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />小型盆栽有哪些選擇？它們在辦公室中有什麼用處？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse5"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      小型盆栽可以包括多種植物，如多肉植物、仙人掌等。它們在辦公室中可以提供小巧的綠意點綴，增添生氣。
+                      <div
+                        class="chartBox"
+                        style="max-width: 500px; max-height: 300px"
+                      >
+                        <canvas
+                          id="myChart"
+                          max-width="500"
+                          max-height="300"
+                          class="d-inlineblock"
+                        ></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse6"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse6"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />小型盆栽容易照顧嗎？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse6"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      是的，大多數小型盆栽相對容易照顧，只需定期澆水和充足的陽光。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse7"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse7"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />小型盆栽租賃服務的價格如何計算？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse7"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      租賃費用通常根據所選植物種類和租賃期限計算，您可以向我們的客服瞭解詳細價格。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 景觀設計 -->
+      <div class="div my-5">
+        <h3 class="fw-bold h4 mb-4">
+          <img
+            src="./img/leaf-icon 1.png"
+            alt="leaf-icon"
+            class="me-2"
+            style="width: 34px; height: 30px"
+          />關於景觀設計的問題
+        </h3>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse8"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse8"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />什麼是景觀設計服務，它可以為我的工作環境帶來什麼好處？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse8"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      景觀設計服務是為您的工作環境創建定制的植物佈局，以提高空間的美感、氛圍和功能性。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse9"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse9"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />如何開始進行景觀設計？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse9"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      您可以與我們的室內景觀設計師進行咨詢，分享您的需求和喜好，然後我們將提供相應的建議和方案。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button fw-bold"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse10"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapse10"
+              >
+                <img
+                  src="./img/Q.png"
+                  alt="Q"
+                  class="me-3 question_img-Q"
+                />景觀設計服務需要多長時間完成？
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapse10"
+              class="accordion-collapse collapse"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-auto">
+                    <img src="./img/A.png" alt="A" class="question_img-Q" />
+                  </div>
+                  <div class="col">
+                    <div>
+                      <p>
+                        時間取決於設計的複雜性和規模。我們將與您一起設定時間表，以確保您的項目按時完成。
+                      </p>
+
+                      <ol class="mt-3" type="1">
+                        <li class="mb-2">
+                          <strong>需求分析和訪問（1週）：</strong>
+                          我們的室內景觀設計師將與您會面，了解您的需求、偏好和預算。
+                        </li>
+                        <li class="mb-2">
+                          <strong>初步概念設計（2週）：</strong>
+                          我們的團隊將根據您的要求開始創建初步概念和草圖。
+                        </li>
+                        <li class="mb-2">
+                          <strong>設計討論和修訂（1週）： </strong>
+                          我們將與您共享初步概念，並根據您的反饋進行修改和改進。
+                        </li>
+                        <li class="mb-2">
+                          <strong>確定設計方案（1週）：</strong>
+                          當您滿意設計方案時，我們將確定最終的設計方案。
+                        </li>
+                        <li class="mb-2">
+                          <strong>植物選擇和訂購（2週）：</strong>
+                          我們將根據設計方案選擇適合的植物，然後進行訂購和準備。
+                        </li>
+                        <li class="mb-2">
+                          <strong>設計實施（4週）：</strong>
+                          我們的園藝師將根據最終設計方案開始實施，包括植物安裝和配置。
+                        </li>
+                        <li class="mb-2">
+                          <strong>最終驗收和交付（1週）：</strong>
+                          我們將與您一起進行最終審核，確保一切符合預期。
+                        </li>
+                      </ol>
+                      <br />
+                      請注意，這只是一個簡單的模擬，實際的時間表可能因項目的規模、複雜性和其他因素而有所不同。建議在開始任何景觀設計項目之前與我們的設計師進一步討論，以確定確切的時間表和需求。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-primary">
+      <div class="footer__line"></div>
+      <!-- nav -->
+      <div
+        class="footer-nav__bgcolor mb-0 py-2 px-2 px-lg-5 container"
+        style="min-height: 34px"
+      >
+        <div class="nav__active">
+          <ul class="mb-0 list-unstyled d-flex justify-content-end">
+            <li class="d-flex align-items-center">
+              <a
+                href="./index.html#about"
+                class="text-decoration-none fw-semibold ms-3 nav__link"
+                >關於我們</a
+              >
+              <div class="nav__link-line ms-3"></div>
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="./index.html#design"
+                class="text-decoration-none fw-semibold ms-3 nav__link"
+                >園藝設計</a
+              >
+              <div class="nav__link-line ms-3"></div>
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="./index.html#sell"
+                class="text-decoration-none fw-semibold ms-3 nav__link"
+                >盆栽出租</a
+              >
+              <div class="nav__link-line ms-3"></div>
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="#"
+                class="text-decoration-none fw-semibold ms-3 nav__link"
+                >常見問題</a
+              >
+              <div class="nav__link-line ms-3"></div>
+            </li>
+            <li class="d-flex align-items-center">
+              <a
+                href="./form.html"
+                class="text-decoration-none fw-semibold ms-3 nav__link"
+                >方案購買</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 資訊 -->
+      <div
+        class="d-md-flex justify-content-between flex-wrap-nowrap px-2 px-lg-5 py-4 align-items-center container"
+      >
+        <div class="d-flex footer__text">
+          <!-- footer-logo -->
+          <div><img src="./img/logo-2.png" alt="小盆友" /></div>
+
+          <!-- footer-資訊 -->
+          <ul class="list-unstyled ms-3 my-4">
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=24.158711326626836, 120.66835272549078&query_place_id=ChIJAQDA-ng9aTQR9yoPMNzx54g"
+                class="link-light text-decoration-none"
+                target="_blank"
+                >地址：404台中市北區館前路1號</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+886-212-345-678"
+                class="link-light text-decoration-none"
+                >TEL：02-1234-5678</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:spenyou@gmail.com"
+                class="link-light text-decoration-none"
+                >E-mail：spenyou@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer-外部連結 -->
+        <div class="text-md-end text-center flex-wrap-nowrap">
+          <button
+            class="footer__btn ms-3"
+            type="button"
+            href="https://www.facebook.com/"
+          >
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="bi bi-facebook footer__icon"></i
+            ></a>
+          </button>
+          <button class="footer__btn ms-3" type="button">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="bi bi-instagram footer__icon"></i
+            ></a>
+          </button>
+          <button class="footer__btn ms-3" type="button">
+            <a href="http://line.me/ti/p/~spenyou" target="_blank">
+              <i class="bi bi-line footer__icon"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="./js/all.js"></script>
+  </body>
+</html>

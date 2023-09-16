@@ -1,0 +1,40 @@
+@use "../layout/grid" as *;
+
+.form__line {
+  border-bottom: 2.3px dotted rgba(51, 51, 51, 0.5);
+}
+
+//form btn text-size
+.form__btn-text {
+  font-size: 1.25rem;
+}
+@include grid-md {
+  .form__btn-text {
+    font-size: 1rem;
+  }
+}
+
+//改變input樣式
+.form-control {
+  background-color: #f4f4f4 !important;
+  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
+  border-radius: 0px !important;
+  color: black !important;
+}
+
+//郵遞區號查詢按鈕
+.form_postalbtn.btn {
+  background-color: #f4f4f4 !important;
+  color: #7fb22d !important;
+  &:hover {
+    background-color: #7fb22d !important;
+    color: #f4f4f4 !important;
+  }
+}
+
+//郵遞區號選單
+.form-select {
+  background-color: #f4f4f4 !important;
+  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
+  border-radius: 0px !important;
+}

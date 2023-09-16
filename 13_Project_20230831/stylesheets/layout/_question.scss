@@ -1,0 +1,13 @@
+@use "../vendors-extensions/variables" as *;
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
+.question_img-Q {
+  width: 22px;
+  height: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
