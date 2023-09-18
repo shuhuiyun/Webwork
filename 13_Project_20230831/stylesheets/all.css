@@ -166,6 +166,8 @@ footer {
 .footer__btn {
   border: none;
   border-radius: 50%;
+  width: 38px;
+  height: 38px;
 }
 
 .footer__text ul {
