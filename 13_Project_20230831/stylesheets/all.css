@@ -91,7 +91,7 @@ body {
 }
 
 .banner {
-  background-image: url(../../img/banner.png);
+  background-image: url(.././img/banner.png);
   padding: auto;
   padding-top: 12%;
   padding-bottom: 12%;
@@ -11163,7 +11163,7 @@ textarea.form-control-lg {
 }
 .hide__logo {
   width: 265px;
-  background-image: url("../../img/logo.png");
+  background-image: url(".././img/logo.png");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
