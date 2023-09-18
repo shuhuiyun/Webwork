@@ -1,5 +1,5 @@
 @use "../layout/grid" as *;
-$logo-img: url("../../img/logo.png");
+$logo-img: url(".././img/logo.png");
 $logo-width: 265px;
 .hide__logo {
   width: $logo-width;
