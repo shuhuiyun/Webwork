@@ -41,30 +41,6 @@ body {
   }
 }
 
-.btn-outline-primary {
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-
-.btn-primary {
-  --bs-btn-color: #ffffff !important;
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-
-.btn-secondary {
-  --bs-btn-color: #ffffff !important;
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-
-.btn-light {
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-  --bs-btn-hover-bg: #7fb22d !important;
-  --bs-btn-active-bg: #7fb22d !important;
-}
-
 .nav__link {
   color: rgba(244, 244, 244, 0.8);
 }
@@ -84,153 +60,6 @@ body {
   border-radius: 0px !important;
   height: 6.5rem;
   border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
-}
-
-.nav__shadow {
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.banner {
-  background-image: url(.././img/banner.png);
-  padding: auto;
-  padding-top: 12%;
-  padding-bottom: 12%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.banner p {
-  line-height: 35px;
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: bolder;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
-}
-.banner p span:first-child {
-  font-size: 3rem;
-}
-@media (max-width: 720px) {
-  .banner span:first-child {
-    font-size: 2rem !important;
-  }
-  .banner .hide-text {
-    display: none;
-  }
-}
-
-@media (max-width: 720px) {
-  .banner {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
-}
-.btn-outline-primary {
-  color: #fff;
-}
-
-.footer-nav__bgcolor {
-  background: #7fb22d;
-  position: relative;
-}
-
-footer {
-  position: relative;
-}
-
-.footer__line {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  top: 40px;
-  left: 50%;
-  background: #f4f4f4;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.nav__active {
-  display: block;
-}
-
-@media (max-width: 576px) {
-  .nav__active {
-    display: none;
-  }
-}
-.footer__icon {
-  color: #7fb22d;
-  font-size: 24px;
-}
-
-.footer__btn {
-  border: none;
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
-}
-
-.footer__text ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.footer__text ul li {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .footer__text {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.form__line {
-  border-bottom: 2.3px dotted rgba(51, 51, 51, 0.5);
-}
-
-.form__btn-text {
-  font-size: 1.25rem;
-}
-
-@media (max-width: 768px) {
-  .form__btn-text {
-    font-size: 1rem;
-  }
-}
-.form-control {
-  background-color: #f4f4f4 !important;
-  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
-  border-radius: 0px !important;
-  color: black !important;
-}
-
-.form_postalbtn.btn {
-  background-color: #f4f4f4 !important;
-  color: #7fb22d !important;
-}
-.form_postalbtn.btn:hover {
-  background-color: #7fb22d !important;
-  color: #f4f4f4 !important;
-}
-
-.form-select {
-  background-color: #f4f4f4 !important;
-  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
-  border-radius: 0px !important;
-}
-
-.accordion {
-  --bs-accordion-btn-focus-box-shadow: none !important;
-}
-
-.question_img-Q {
-  width: 22px;
-  height: 25px;
-}
-
-.accordion-button:not(.collapsed) {
-  box-shadow: none !important;
 }
 
 :root,
@@ -4659,7 +4488,7 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23334712'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-border-color: #bfd996;
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(127, 178, 45, 0.25);
+  --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: var(--bs-primary-text-emphasis);
@@ -11163,21 +10992,128 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.hide__logo {
-  width: 265px;
-  background-image: url(".././img/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  text-indent: 101%; /*首行縮排到超過100%*/
-  overflow: hidden; /*超過div的範圍就隱藏*/
-  white-space: nowrap; /*不斷行*/
+.form__line {
+  border-bottom: 2.3px dotted rgba(51, 51, 51, 0.5);
 }
 
-@media (max-width: 576px) {
-  .hide__logo {
-    width: 127px;
-    background-position: left;
+.form__btn-text {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 767.98px) {
+  .form__btn-text {
+    font-size: 1rem;
+  }
+}
+.form-control {
+  background-color: #f4f4f4 !important;
+  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
+  border-radius: 0px !important;
+  color: black !important;
+}
+
+.form-select {
+  background-color: #f4f4f4 !important;
+  border: 2.3px dotted rgba(51, 51, 51, 0.5) !important;
+  border-radius: 0px !important;
+}
+
+.question_img-Q {
+  width: 22px;
+  height: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.nav__shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.banner {
+  background-image: url(.././img/banner.png);
+  padding-top: 12%;
+  padding-bottom: 12%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner p {
+  line-height: 35px;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+.banner p span:first-child {
+  font-size: 3rem;
+}
+@media (max-width: 720px) {
+  .banner span:first-child {
+    font-size: 2rem !important;
+  }
+  .banner .hide-text {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .banner {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+}
+footer {
+  position: relative;
+}
+
+.footer__line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 40px;
+  left: 50%;
+  background: #f4f4f4;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.nav__active {
+  display: block;
+}
+
+@media (max-width: 575.98px) {
+  .nav__active {
+    display: none;
+  }
+}
+.footer__icon {
+  color: #7fb22d;
+  font-size: 24px;
+}
+
+.footer__btn {
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+.footer__text ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer__text ul li {
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .footer__text {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .main__img-item01 div:first-child img {
@@ -11185,7 +11121,7 @@ textarea.form-control-lg {
   height: 23rem;
   border-radius: 2rem 0rem 0rem 0rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .main__img-item01 div:first-child img {
     border-radius: 2rem 2rem 0rem 0rem;
   }
@@ -11196,7 +11132,7 @@ textarea.form-control-lg {
   border-radius: 0rem 0rem 2rem 2rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .main__img-item01.hide {
     display: none;
   }
@@ -11219,17 +11155,49 @@ textarea.form-control-lg {
   height: 26rem;
   border-radius: 0rem 0rem 0rem 2rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .main__img-item02 div:nth-child(2) img {
     border-radius: 0rem 0rem 2rem 2rem;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .main__img-item02.hide {
     display: none;
   }
   .main__img-item02.show {
     display: block !important;
   }
+}
+.hide__logo {
+  width: 265px;
+  background-image: url(".././img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  text-indent: 101%; /*首行縮排到超過100%*/
+  overflow: hidden; /*超過div的範圍就隱藏*/
+  white-space: nowrap; /*不斷行*/
+}
+
+@media (max-width: 575.98px) {
+  .hide__logo {
+    width: 127px;
+    background-position: left;
+  }
+}
+.btn__text-color--hover {
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+}
+
+.btn__text-color {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-color: #ffffff;
+}
+
+.btn__primary-bg {
+  --bs-btn-hover-bg: #7fb22d;
+  --bs-btn-active-bg: #7fb22d;
 }/*# sourceMappingURL=all.css.map */

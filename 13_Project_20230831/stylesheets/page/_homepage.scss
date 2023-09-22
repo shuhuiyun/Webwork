@@ -1,0 +1,76 @@
+@use "../vendors/bootstrap" as *;
+//主要內容的圖片
+.main__img-item01 {
+  div {
+    &:first-child {
+      img {
+        width: 100%;
+        height: 23rem;
+        border-radius: 2rem 0rem 0rem 0rem;
+      }
+      @include media-breakpoint-down(lg) {
+        img {
+          border-radius: 2rem 2rem 0rem 0rem;
+        }
+      }
+    }
+    &:nth-child(2) {
+      img {
+        width: 100%;
+        height: 13rem;
+        border-radius: 0rem 0rem 2rem 2rem;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .main__img-item01.hide {
+    display: none;
+  }
+  .main__img-item01.show {
+    display: block !important;
+  }
+}
+
+.main__img-item02 {
+  .row {
+    div {
+      &:first-child {
+        img {
+          width: 100%;
+          height: 14rem;
+          border-radius: 2rem 0rem 0rem 0rem;
+        }
+      }
+      &:nth-child(2) {
+        img {
+          width: 100%;
+          height: 14rem;
+          border-radius: 0rem 2rem 0rem 0rem;
+        }
+      }
+    }
+  }
+  div {
+    &:nth-child(2) {
+      img {
+        width: 100%;
+        height: 26rem;
+        border-radius: 0rem 0rem 0rem 2rem;
+      }
+      @include media-breakpoint-down(lg) {
+        img {
+          border-radius: 0rem 0rem 2rem 2rem;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  .main__img-item02.hide {
+    display: none;
+  }
+  .main__img-item02.show {
+    display: block !important;
+  }
+}

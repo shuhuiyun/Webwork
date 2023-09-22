@@ -1,5 +1,3 @@
-@use "../layout/grid" as *;
-
 $span-center-top: 50%;
 .hamburger {
   z-index: 999;
@@ -37,29 +35,6 @@ $span-center-top: 50%;
       display: block;
     }
   }
-}
-
-//button style
-.btn-outline-primary {
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-.btn-primary {
-  --bs-btn-color: #ffffff !important;
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-.btn-secondary {
-  --bs-btn-color: #ffffff !important;
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-}
-
-.btn-light {
-  --bs-btn-hover-color: #ffffff !important;
-  --bs-btn-active-color: #ffffff !important;
-  --bs-btn-hover-bg: #7fb22d !important;
-  --bs-btn-active-bg: #7fb22d !important;
 }
 
 //footer nav button
