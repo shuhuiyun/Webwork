@@ -11099,15 +11099,12 @@ footer {
   border-radius: 50%;
   width: 38px;
   height: 38px;
+  display: inline-block;
+  background-color: #f4f4f4;
 }
 
-.footer__text ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.footer__text ul li {
-  display: block;
+.footer__text {
+  flex-direction: row;
 }
 
 @media (max-width: 767.98px) {
@@ -11187,14 +11184,14 @@ footer {
   }
 }
 .btn__text-color--hover {
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-active-color: #ffffff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
 }
 
 .btn__text-color {
   --bs-btn-color: #fff;
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-active-color: #ffffff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
 }
 
 .btn__primary-bg {

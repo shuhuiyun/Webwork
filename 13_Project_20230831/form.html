@@ -180,6 +180,8 @@
                   name="options-base"
                   id="large-plants"
                   autocomplete="off"
+                  placeholder="請在這裡輸入您的全名"
+                  required
                 />
                 <label
                   class="btn btn__primary-bg btn__text-color--hover btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
@@ -196,6 +198,7 @@
                   name="options-base"
                   id="small-plants"
                   autocomplete="off"
+                  required
                 />
                 <label
                   class="btn btn__primary-bg btn__text-color--hover btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
@@ -212,6 +215,7 @@
                   name="options-base"
                   id="custom-olants"
                   autocomplete="off"
+                  required
                 />
                 <label
                   class="btn btn__primary-bg btn__text-color--hover btn-light d-block form__btn2 d-flex align-items-center justify-content-center"
@@ -221,6 +225,7 @@
                   </p></label
                 >
               </div>
+              <div class="invalid-feedback">請選擇一項方案。</div>
             </div>
           </div>
         </div>
@@ -290,7 +295,7 @@
             >
           </div>
           <div class="col-lg-3 col-md-5 col-7">
-            <input type="text" class="form-control" id="name" />
+            <input type="text" class="form-control" id="name" required />
           </div>
         </div>
 
@@ -372,8 +377,9 @@
                 class="form-select mb-3"
                 aria-label="Default select example"
                 id="address"
+                required
               >
-                <option>請選擇縣市</option>
+                <option selected disabled value="">請選擇縣市</option>
                 <option value="基隆市">基隆市</option>
                 <option value="臺北市">臺北市</option>
                 <option value="新北市">新北市</option>
@@ -398,40 +404,30 @@
                 <option value="連江縣">連江縣</option>
               </select>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address2"
-                  aria-describedby="addressHelpInline"
-                />
-              </div>
-              <div class="col mb-2">
-                <div>
-                  <span id="addressHelpInline" class="form-text">
-                    請您提供正確的地址，這樣我們才能更好地為您提供服務。謝謝您的合作！
-                  </span>
-                </div>
-              </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="address2"
+                aria-describedby="addressHelpInline"
+                required
+              />
+
+              <span id="addressHelpInline" class="form-text">
+                請您提供正確的地址，這樣我們才能更好地為您提供服務。謝謝您的合作！
+              </span>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address3"
-                  aria-describedby="communityHelpInline"
-                />
-              </div>
-              <div class="col">
-                <div>
-                  <span id="communityHelpInline" class="form-text">
-                    ( 辦公大樓、社區名稱 )
-                  </span>
-                </div>
-              </div>
-            </div>
+
+            <input
+              type="text"
+              class="form-control"
+              id="address3"
+              aria-describedby="communityHelpInline"
+              required
+            />
+            <span id="communityHelpInline" class="form-text">
+              ( 辦公大樓、社區名稱 )
+            </span>
           </div>
         </div>
 
@@ -482,13 +478,14 @@
           </div>
 
           <div class="col">
-            <input type="text" class="form-control mb-3" id="mail" />
+            <input type="text" class="form-control mb-3" id="mail" required />
 
             <input
               type="text"
               class="form-control"
               id="mail2"
               aria-describedby="mailHelpInline"
+              required
             />
             <span id="mailHelpInline" class="form-text">
               請輸入兩次以進行確認。
@@ -512,6 +509,7 @@
               id="Textarea"
               rows="3"
               aria-activedescendant="textarealHelpInline"
+              required
             ></textarea>
             <span id="textarealHelpInline" class="form-text">
               如果您有關於訂單的問題，請一定告訴我們您的訂單編號。非常感謝您的合作！
@@ -644,5 +642,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

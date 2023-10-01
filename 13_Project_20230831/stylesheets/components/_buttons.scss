@@ -1,3 +1,4 @@
+@use "../vendors-extensions/variables" as *;
 $span-center-top: 50%;
 .hamburger {
   z-index: 999;
@@ -5,7 +6,7 @@ $span-center-top: 50%;
   width: 45px;
   height: 42px;
   span {
-    background: #7fb22d;
+    background: $primary;
     position: absolute;
     width: 25px;
     height: 2px;
@@ -42,7 +43,7 @@ $span-center-top: 50%;
 .nav__link {
   color: #f4f4f4cc;
   &:hover {
-    color: #f4f4f4;
+    color: $light;
     transition: 0.3s all ease-in-out;
   }
 }

@@ -1,5 +1,5 @@
 @use "../vendors/bootstrap" as *;
-
+@use "../vendors-extensions/variables" as *;
 footer {
   position: relative;
 }
@@ -10,7 +10,7 @@ footer {
   height: 1px;
   top: 40px;
   left: 50%;
-  background: #f4f4f4;
+  background: $light;
   transform: translate(-50%, -50%);
   z-index: 3;
 }
@@ -26,7 +26,7 @@ footer {
 
 //資訊
 .footer__icon {
-  color: #7fb22d;
+  color: $primary;
   font-size: 24px;
 }
 .footer__btn {
@@ -34,17 +34,12 @@ footer {
   border-radius: 50%;
   width: 38px;
   height: 38px;
+  display: inline-block;
+  background-color: $light;
 }
 
 .footer__text {
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    li {
-      display: block;
-    }
-  }
+  flex-direction: row;
 }
 @include media-breakpoint-down(md) {
   .footer__text {
