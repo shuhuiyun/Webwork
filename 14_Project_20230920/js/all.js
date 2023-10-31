@@ -10,7 +10,7 @@ function save() {
 //把資料取出來
 function read() {
   var getData = localStorage.getItem("dataItem"); //取字串
-  data = JSON.parse(getData) || []; //如果沒有資料就是空字串
+  data = JSON.parse(getData) || [];
 }
 
 //最上方當天日期
