@@ -4,12 +4,13 @@ data = [];
 function save() {
   var dataTxt = JSON.stringify(data); //陣列轉字串
   localStorage.setItem("dataItem", dataTxt); //存字串
+  console.log(dataTxt);
 }
 
 //把資料取出來
 function read() {
   var getData = localStorage.getItem("dataItem"); //取字串
-  data = JSON.parse(getData);
+  data = JSON.parse(getData) || []; //如果沒有資料就是空字串
 }
 
 //最上方當天日期
@@ -152,28 +153,41 @@ delAll.addEventListener("click", function (e) {
 const listBtn = document.querySelector(".list__btn");
 
 listBtn.addEventListener("click", function (e) {
-  let str = "";
-  listItems.forEach((item) => item.classList.remove("active"));
   const li = e.target.closest("li");
-  data.forEach((item, index) => {
-    const content = `<li class="${
-      item.done ? "active" : ""
-    }" data-number="${index}">
-  <button class="check" ><i class="bi bi-check-lg" ></i></button
-  ><span
-    ><p>${item.project}</p>
-    <div class="del__button ">
-      <i class="bi bi-trash-fill "></i></div
-  ></span>
-</li>`;
-    if (e.target.textContent == "全部") {
-      str += content;
-    } else if (e.target.textContent == "待完成" && item.done == false) {
-      str += content;
-    } else if (e.target.textContent == "已完成" && item.done == true) {
-      str += content;
+  listItems.forEach((item) => item.classList.remove("active"));
+  read();
+  if (data.length == 0) {
+    if (
+      e.target.textContent == "全部" ||
+      e.target.textContent == "待完成" ||
+      e.target.textContent == "已完成"
+    ) {
+      li.classList.add("active");
     }
-    listContent.innerHTML = str;
-    li.classList.add("active");
-  });
+  } else {
+    let str = "";
+
+    data.forEach((item, index) => {
+      const content = `<li class="${
+        item.done ? "active" : ""
+      }" data-number="${index}">
+    <button class="check" ><i class="bi bi-check-lg" ></i></button
+    ><span
+      ><p>${item.project}</p>
+      <div class="del__button ">
+        <i class="bi bi-trash-fill "></i></div
+    ></span>
+  </li>`;
+
+      if (e.target.textContent == "全部") {
+        str += content;
+      } else if (e.target.textContent == "待完成" && item.done == false) {
+        str += content;
+      } else if (e.target.textContent == "已完成" && item.done == true) {
+        str += content;
+      }
+      listContent.innerHTML = str;
+      li.classList.add("active");
+    });
+  }
 });
