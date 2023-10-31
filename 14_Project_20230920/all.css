@@ -289,6 +289,11 @@ body {
 .list li button.check .bi-check-lg {
   color: #f4f4f4;
 }
+.list li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .list li p {
   cursor: default;
   border: rgba(211, 237, 235, 0) 3px solid;

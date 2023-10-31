@@ -271,7 +271,11 @@ body {
         color: #f4f4f4;
       }
     }
-
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     p {
       cursor: default;
       border: #d3edeb00 3px solid;
@@ -293,6 +297,7 @@ body {
         top: 50%;
         transform: translate(0, -50%);
       }
+
       i {
         color: #f4f4f4;
         transition: all 0.2s ease-in-out;
