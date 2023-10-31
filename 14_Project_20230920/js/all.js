@@ -4,7 +4,6 @@ data = [];
 function save() {
   var dataTxt = JSON.stringify(data); //陣列轉字串
   localStorage.setItem("dataItem", dataTxt); //存字串
-  console.log(dataTxt);
 }
 
 //把資料取出來
