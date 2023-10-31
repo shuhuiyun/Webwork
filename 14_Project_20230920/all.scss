@@ -199,6 +199,11 @@ body {
     color: #b5b5b5;
     opacity: 1; /* Firefox */
   }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   button i {
     text-align: center;
     vertical-align: middle;

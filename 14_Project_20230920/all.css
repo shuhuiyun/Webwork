@@ -213,6 +213,11 @@ body {
   color: #b5b5b5;
   opacity: 1; /* Firefox */
 }
+.addData button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .addData button i {
   text-align: center;
   vertical-align: middle;
