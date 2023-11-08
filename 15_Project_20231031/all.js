@@ -104,7 +104,7 @@ searchBtn.addEventListener("click", function (e) {
   }, "500");
 });
 
-// 重置所有箭头透明度
+// 重製箭頭
 function resetArrowOpacity() {
   const priceElements = document.querySelectorAll("[data-price]");
   priceElements.forEach((e) => {
